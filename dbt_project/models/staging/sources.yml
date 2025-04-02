@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: ercot_raw
+    schema: main
+    tables:
+      - name: prices
+        external:
+          location: "data/raw/ercotprices/*.parquet"
+          format: parquet

@@ -1,0 +1,28 @@
+[project]
+name = "grid-data"
+version = "0.0.1"
+dependencies = [
+  "dagster",
+  "dagster-dbt",
+  "dbt-duckdb",
+  "duckdb",
+  "pandas",
+  "pyarrow"
+]
+readme = "README.md"
+
+[project.optional-dependencies]
+dev = [
+  "pre-commit",
+  "mypy",
+  "black",
+  "ruff",
+  "pip-tools"
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = []
