@@ -1,0 +1,156 @@
+version: 2
+
+models:
+  - name: stg__60_day_dam_disclosure_dam_gen_resource
+    description: "Staged 60-day DAM generation resource data from ERCOT"
+    tests: []
+    columns:
+      - name: Time
+        description: "Time of the record"
+      
+      - name: "Interval Start"
+        description: "Start time of the interval"
+      
+      - name: "Interval End"
+        description: "End time of the interval"
+      
+      - name: "QSE"
+        description: "Qualified Scheduling Entity"
+      
+      - name: "DME"
+        description: "Designated Market Entity"
+      
+      - name: "Resource Name"
+        description: "Name of the generation resource"
+      
+      - name: "Resource Type"
+        description: "Type of generation resource"
+      
+      - name: "QSE submitted Curve-MW1"
+        description: "QSE submitted curve MW for price point 1"
+      
+      - name: "QSE submitted Curve-Price1"
+        description: "QSE submitted curve price for price point 1"
+      
+      - name: "QSE submitted Curve-MW2"
+        description: "QSE submitted curve MW for price point 2"
+      
+      - name: "QSE submitted Curve-Price2"
+        description: "QSE submitted curve price for price point 2"
+      
+      - name: "QSE submitted Curve-MW3"
+        description: "QSE submitted curve MW for price point 3"
+      
+      - name: "QSE submitted Curve-Price3"
+        description: "QSE submitted curve price for price point 3"
+      
+      - name: "QSE submitted Curve-MW4"
+        description: "QSE submitted curve MW for price point 4"
+      
+      - name: "QSE submitted Curve-Price4"
+        description: "QSE submitted curve price for price point 4"
+      
+      - name: "QSE submitted Curve-MW5"
+        description: "QSE submitted curve MW for price point 5"
+      
+      - name: "QSE submitted Curve-Price5"
+        description: "QSE submitted curve price for price point 5"
+      
+      - name: "QSE submitted Curve-MW6"
+        description: "QSE submitted curve MW for price point 6"
+      
+      - name: "QSE submitted Curve-Price6"
+        description: "QSE submitted curve price for price point 6"
+      
+      - name: "QSE submitted Curve-MW7"
+        description: "QSE submitted curve MW for price point 7"
+      
+      - name: "QSE submitted Curve-Price7"
+        description: "QSE submitted curve price for price point 7"
+      
+      - name: "QSE submitted Curve-MW8"
+        description: "QSE submitted curve MW for price point 8"
+      
+      - name: "QSE submitted Curve-Price8"
+        description: "QSE submitted curve price for price point 8"
+      
+      - name: "QSE submitted Curve-MW9"
+        description: "QSE submitted curve MW for price point 9"
+      
+      - name: "QSE submitted Curve-Price9"
+        description: "QSE submitted curve price for price point 9"
+      
+      - name: "QSE submitted Curve-MW10"
+        description: "QSE submitted curve MW for price point 10"
+      
+      - name: "QSE submitted Curve-Price10"
+        description: "QSE submitted curve price for price point 10"
+      
+      - name: "Start Up Hot"
+        description: "Hot start-up cost"
+      
+      - name: "Start Up Inter"
+        description: "Intermediate start-up cost"
+      
+      - name: "Start Up Cold"
+        description: "Cold start-up cost"
+      
+      - name: "Min Gen Cost"
+        description: "Minimum generation cost"
+      
+      - name: "HSL"
+        description: "High Sustained Limit"
+      
+      - name: "LSL"
+        description: "Low Sustained Limit"
+      
+      - name: "Resource Status"
+        description: "Status of the resource"
+      
+      - name: "Awarded Quantity"
+        description: "Quantity awarded"
+      
+      - name: "Settlement Point Name"
+        description: "Name of the settlement point"
+      
+      - name: "Energy Settlement Point Price"
+        description: "Energy price at the settlement point"
+      
+      - name: "RegUp Awarded"
+        description: "Regulation Up service awarded"
+      
+      - name: "RegUp MCPC"
+        description: "Regulation Up Market Clearing Price for Capacity"
+      
+      - name: "RegDown Awarded"
+        description: "Regulation Down service awarded"
+      
+      - name: "RegDown MCPC"
+        description: "Regulation Down Market Clearing Price for Capacity"
+      
+      - name: "RRSPFR Awarded"
+        description: "Responsive Reserve Service - Primary Frequency Response awarded"
+      
+      - name: "RRSFFR Awarded"
+        description: "Responsive Reserve Service - Fast Frequency Response awarded"
+      
+      - name: "RRSUFR Awarded"
+        description: "Responsive Reserve Service - Under Frequency Response awarded"
+      
+      - name: "RRS MCPC"
+        description: "Responsive Reserve Service Market Clearing Price for Capacity"
+      
+      - name: "ECRSSD Awarded"
+        description: "ERCOT Contingency Reserve Service - Synchronous Deployment awarded"
+      
+      - name: "ECRS MCPC"
+        description: "ERCOT Contingency Reserve Service Market Clearing Price for Capacity"
+      
+      - name: "NonSpin Awarded"
+        description: "Non-Spinning Reserve awarded"
+      
+      - name: "NonSpin MCPC"
+        description: "Non-Spinning Reserve Market Clearing Price for Capacity"
+      
+      - name: load_date
+        description: "Date when the data was loaded"

@@ -16,6 +16,10 @@ python -m venv .venv
 source .venv/bin/activate
 pip install -e ".[dev]"
 dagster dev
+```
+
+Setup .env file based on .env_example (copy .env_example and fill in the blanks)
+
 
 graph LR
     raw_prices[(raw/parquet)] --> dbt_assets
@@ -27,3 +31,4 @@ graph LR
 ## Project Structure
 ```bash
 tree -L 2 -I '.venv|__pycache__'
+```

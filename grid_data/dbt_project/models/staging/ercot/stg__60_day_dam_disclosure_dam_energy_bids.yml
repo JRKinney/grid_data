@@ -1,0 +1,93 @@
+version: 2
+
+models:
+  - name: stg__60_day_dam_disclosure_dam_energy_bids
+    description: "Staged 60-day DAM energy bids data from ERCOT"
+    tests: []
+    columns:
+      - name: Time
+        description: "Time of the bid"
+      
+      - name: "Interval Start"
+        description: "Start time of the bidding interval"
+      
+      - name: "Interval End"
+        description: "End time of the bidding interval"
+      
+      - name: "Settlement Point"
+        description: "Settlement point location"
+      
+      - name: "QSE Name"
+        description: "Name of the Qualified Scheduling Entity"
+      
+      - name: "Energy Only Bid MW1"
+        description: "Energy bid quantity in MW for price point 1"
+      
+      - name: "Energy Only Bid Price1"
+        description: "Energy bid price for price point 1"
+      
+      - name: "Energy Only Bid MW2"
+        description: "Energy bid quantity in MW for price point 2"
+      
+      - name: "Energy Only Bid Price2"
+        description: "Energy bid price for price point 2"
+      
+      - name: "Energy Only Bid MW3"
+        description: "Energy bid quantity in MW for price point 3"
+      
+      - name: "Energy Only Bid Price3"
+        description: "Energy bid price for price point 3"
+      
+      - name: "Energy Only Bid MW4"
+        description: "Energy bid quantity in MW for price point 4"
+      
+      - name: "Energy Only Bid Price4"
+        description: "Energy bid price for price point 4"
+      
+      - name: "Energy Only Bid MW5"
+        description: "Energy bid quantity in MW for price point 5"
+      
+      - name: "Energy Only Bid Price5"
+        description: "Energy bid price for price point 5"
+      
+      - name: "Energy Only Bid MW6"
+        description: "Energy bid quantity in MW for price point 6"
+      
+      - name: "Energy Only Bid Price6"
+        description: "Energy bid price for price point 6"
+      
+      - name: "Energy Only Bid MW7"
+        description: "Energy bid quantity in MW for price point 7"
+      
+      - name: "Energy Only Bid Price7"
+        description: "Energy bid price for price point 7"
+      
+      - name: "Energy Only Bid MW8"
+        description: "Energy bid quantity in MW for price point 8"
+      
+      - name: "Energy Only Bid Price8"
+        description: "Energy bid price for price point 8"
+      
+      - name: "Energy Only Bid MW9"
+        description: "Energy bid quantity in MW for price point 9"
+      
+      - name: "Energy Only Bid Price9"
+        description: "Energy bid price for price point 9"
+      
+      - name: "Energy Only Bid MW10"
+        description: "Energy bid quantity in MW for price point 10"
+      
+      - name: "Energy Only Bid Price10"
+        description: "Energy bid price for price point 10"
+      
+      - name: "Energy Only Bid ID"
+        description: "Unique identifier for the energy bid"
+      
+      - name: "Multi-Hour Block Indicator"
+        description: "Indicator for multi-hour block bids"
+      
+      - name: "Block/Curve indicator"
+        description: "Indicator for block or curve type bids"
+      
+      - name: load_date
+        description: "Date when the data was loaded"

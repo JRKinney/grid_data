@@ -18,6 +18,7 @@ build/
 # Local Data
 /data/processed/
 /data/forecasts/
+/data/raw/
 !data/raw/sample_data/
 
 # DBT

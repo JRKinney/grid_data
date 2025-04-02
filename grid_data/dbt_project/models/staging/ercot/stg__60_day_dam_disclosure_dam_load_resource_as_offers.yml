@@ -1,0 +1,66 @@
+version: 2
+
+models:
+  - name: stg__60_day_dam_disclosure_dam_load_resource
+    description: "Staged 60-day DAM load resource data from ERCOT"
+    tests: []
+    columns:
+      - name: Time
+        description: "Time of the record"
+      
+      - name: "Interval Start"
+        description: "Start time of the interval"
+      
+      - name: "Interval End"
+        description: "End time of the interval"
+      
+      - name: "Load Resource Name"
+        description: "Name of the load resource"
+      
+      - name: "Max Power Consumption for Load Resource"
+        description: "Maximum power consumption for the load resource"
+      
+      - name: "Low Power Consumption for Load Resource"
+        description: "Low power consumption for the load resource"
+      
+      - name: "RegUp Awarded"
+        description: "Regulation Up service awarded"
+      
+      - name: "RegUp MCPC"
+        description: "Regulation Up Market Clearing Price for Capacity"
+      
+      - name: "RegDown Awarded"
+        description: "Regulation Down service awarded"
+      
+      - name: "RegDown MCPC"
+        description: "Regulation Down Market Clearing Price for Capacity"
+      
+      - name: "RRSPFR Awarded"
+        description: "Responsive Reserve Service - Primary Frequency Response awarded"
+      
+      - name: "RRSFFR Awarded"
+        description: "Responsive Reserve Service - Fast Frequency Response awarded"
+      
+      - name: "RRSUFR Awarded"
+        description: "Responsive Reserve Service - Under Frequency Response awarded"
+      
+      - name: "RRS MCPC"
+        description: "Responsive Reserve Service Market Clearing Price for Capacity"
+      
+      - name: "ECRSSD Awarded"
+        description: "ERCOT Contingency Reserve Service - Synchronous Deployment awarded"
+      
+      - name: "ECRSMD Awarded"
+        description: "ERCOT Contingency Reserve Service - Manual Deployment awarded"
+      
+      - name: "ECRS MCPC"
+        description: "ERCOT Contingency Reserve Service Market Clearing Price for Capacity"
+      
+      - name: "NonSpin Awarded"
+        description: "Non-Spinning Reserve awarded"
+      
+      - name: "NonSpin MCPC"
+        description: "Non-Spinning Reserve Market Clearing Price for Capacity"
+      
+      - name: load_date
+        description: "Date when the data was loaded"
