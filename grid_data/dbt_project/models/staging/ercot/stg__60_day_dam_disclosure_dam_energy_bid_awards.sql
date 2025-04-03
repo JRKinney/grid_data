@@ -1,3 +1,9 @@
+WITH source_data AS (
+    SELECT 
+        *
+    FROM {{ source('ercot_raw', '60_day_dam_disclosure_dam_energy_bid_awards') }} 
+)
+
 SELECT
     "Time",
     "Interval Start",
@@ -8,5 +14,4 @@ SELECT
     "Settlement Point Price",
     "Bid ID",
     "load_date"
-FROM {{ source('ercot_raw', '60_day_disclosures') }}
-WHERE REGEXP_MATCHES(filename, '60_day_dam_disclosure_dam_energy_bid_awards.*\.parquet')
+FROM source_data

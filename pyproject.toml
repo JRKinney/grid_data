@@ -6,6 +6,7 @@ dependencies = [
   "dagster-dbt",
   "dagster-webserver",
   "dbt-duckdb",
+  "duckcli",
   "duckdb",
   "pandas",
   "pyarrow",

@@ -9,4 +9,4 @@ load_dotenv()
 PROJECT_ROOT = Path(__file__).parent
 
 # Data directory paths
-RAW_DATA_DIR = PROJECT_ROOT / os.getenv('GRID_DATA_DIR', 'data/raw') 
+DATA_DIR = PROJECT_ROOT / os.getenv('GRID_DATA_DIR', 'data') 

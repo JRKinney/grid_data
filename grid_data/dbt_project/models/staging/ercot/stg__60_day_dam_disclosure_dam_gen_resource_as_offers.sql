@@ -1,3 +1,10 @@
+
+WITH source_data AS (
+    SELECT
+        *
+    FROM {{ source('ercot_raw', '60_day_dam_disclosure_dam_gen_resource_as_offers') }} 
+)
+
 SELECT
     "Time",
     "Interval Start",
@@ -62,5 +69,4 @@ SELECT
     "PRICE5 OFFLINE NONSPIN",
     "QUANTITY MW5",
     "load_date"
-FROM {{ source('ercot_raw', '60_day_disclosures') }}
-WHERE REGEXP_MATCHES(filename, '60_day_dam_disclosure_dam_gen_resource_as_offers.*\.parquet')
+FROM source_data

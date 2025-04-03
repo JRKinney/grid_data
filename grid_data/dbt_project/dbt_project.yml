@@ -6,10 +6,13 @@ model-paths: ["models"]
 target-path: "target"
 clean-targets: ["target"]
 
+vars:
+  raw_data_path: '../data/raw'
+
 models:
   grid_data:
     staging:
-      +materialized: view
+      +materialized: table
     intermediate:
       +materialized: table
     analytics:

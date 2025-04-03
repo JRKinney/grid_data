@@ -2,7 +2,7 @@ from loguru import logger
 from gridstatus import Ercot
 import pandas as pd
 from pathlib import Path
-from grid_data.config import RAW_DATA_DIR
+from grid_data.config import DATA_DIR
 
 class ErcotFetcher:
     """
@@ -24,7 +24,7 @@ class ErcotFetcher:
         self.start_date = start_date
         self.end_date = end_date
         
-        self.data_dir = Path(data_dir) if data_dir else RAW_DATA_DIR
+        self.data_dir = Path(data_dir) if data_dir else DATA_DIR
 
     def process_60_day_date_delay(self, 
                                   start_date: pd.Timestamp | None = None, 
@@ -56,7 +56,7 @@ class ErcotFetcher:
         fetches the 60-day DAM disclosure files and saves them to the rawdata directory
         """
         if self.disclosure_start_date is None or self.disclosure_end_date is None:
-            logger.info(f"Will not fetch 60-day DAM disclosure due to start and end dates being set before the 60 day delay")
+            logger.info("Will not fetch 60-day DAM disclosure due to start and end dates being set before the 60 day delay")
             return None
         df = self.iso.get_60_day_dam_disclosure(
             date=self.disclosure_start_date,
@@ -64,7 +64,6 @@ class ErcotFetcher:
         )
         for df_type, data in df.items():
             data['load_date'] = pd.Timestamp.now()
-            # data.to_parquet(self.data_dir / "ercot" / "60_day_disclosures" / f'60_day_dam_disclosure_{df_type}_{self.disclosure_start_date.strftime("%Y-%m-%d")}_{self.disclosure_end_date.strftime("%Y-%m-%d")}_{pd.Timestamp.now().strftime("%Y-%m-%dT%H:%M:%S")}_{df_type}.parquet')
-            data.to_csv(self.data_dir / "ercot" / "60_day_disclosures" / f'60_day_dam_disclosure_{df_type}_{self.disclosure_start_date.strftime("%Y-%m-%d")}_{self.disclosure_end_date.strftime("%Y-%m-%d")}_{pd.Timestamp.now().strftime("%Y-%m-%dT%H:%M:%S")}_{df_type}.csv', index=False)
+            data.to_parquet(self.data_dir / "ercot" / "60_day_disclosures" / f'60_day_dam_disclosure_{df_type}__{self.disclosure_start_date.strftime("%Y-%m-%d")}_{self.disclosure_end_date.strftime("%Y-%m-%d")}_{pd.Timestamp.now().strftime("%Y-%m-%dT%H:%M:%S")}_{df_type}.parquet')
 
     

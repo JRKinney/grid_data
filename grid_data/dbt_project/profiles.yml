@@ -1,0 +1,8 @@
+grid_data:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: '../data/grid_data.db'
+      extensions:
+        - parquet

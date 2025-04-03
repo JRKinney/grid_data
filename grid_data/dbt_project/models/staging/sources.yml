@@ -4,7 +4,33 @@ sources:
   - name: ercot_raw
     schema: main
     tables:
-      - name: 60_day_disclosures
-        external:
-          location: "data/raw/ercot/60_day_disclosures/*.parquet"
-          format: parquet
+      - name: 60_day_dam_disclosure_dam_energy_bid_awards
+        meta:
+          external_location: "../data/raw/ercot/60_day_disclosures/60_day_dam_disclosure_dam_energy_bid_awards__*.parquet"
+          file_format: parquet
+          auto_refresh: true
+      - name: 60_day_dam_disclosure_dam_energy_bids
+        meta:
+          external_location: "../data/raw/ercot/60_day_disclosures/60_day_dam_disclosure_dam_energy_bids__*.parquet"
+          file_format: parquet
+          auto_refresh: true
+      - name: 60_day_dam_disclosure_dam_gen_resource_as_offers
+        meta:
+          external_location: "../data/raw/ercot/60_day_disclosures/60_day_dam_disclosure_dam_gen_resource_as_offers__*.parquet"
+          file_format: parquet
+          auto_refresh: true
+      - name: 60_day_dam_disclosure_dam_gen_resource
+        meta:
+          external_location: "../data/raw/ercot/60_day_disclosures/60_day_dam_disclosure_dam_gen_resource__*.parquet"
+          file_format: parquet
+          auto_refresh: true
+      - name: 60_day_dam_disclosure_dam_load_resource_as_offers
+        meta:
+          external_location: "../data/raw/ercot/60_day_disclosures/60_day_dam_disclosure_dam_load_resource_as_offers__*.parquet"
+          file_format: parquet
+          auto_refresh: true
+      - name: 60_day_dam_disclosure_dam_load_resource
+        meta:
+          external_location: "../data/raw/ercot/60_day_disclosures/60_day_dam_disclosure_dam_load_resource__*.parquet"
+          file_format: parquet
+          auto_refresh: true

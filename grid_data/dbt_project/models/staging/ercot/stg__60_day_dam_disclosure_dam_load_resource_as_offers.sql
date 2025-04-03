@@ -1,3 +1,10 @@
+
+WITH source_data AS (
+    SELECT
+        *
+    FROM {{ source('ercot_raw', '60_day_dam_disclosure_dam_load_resource_as_offers') }} 
+)
+
 SELECT
     "Time",
     "Interval Start",
@@ -63,5 +70,4 @@ SELECT
     "QUANTITY MW5",
     "NCLR Flag",
     "load_date"
-FROM {{ source('ercot_raw', '60_day_disclosures') }}
-WHERE REGEXP_MATCHES(filename, '60_day_dam_disclosure_dam_load_resource_as_offers.*\.parquet')
+FROM source_data

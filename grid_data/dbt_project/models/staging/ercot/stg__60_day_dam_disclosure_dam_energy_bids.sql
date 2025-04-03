@@ -1,3 +1,9 @@
+WITH source_data AS (
+    SELECT 
+        *
+    FROM {{ source('ercot_raw', '60_day_dam_disclosure_dam_energy_bids') }} 
+)
+
 SELECT
     "Time",
     "Interval Start",
@@ -28,5 +34,4 @@ SELECT
     "Multi-Hour Block Indicator",
     "Block/Curve indicator",
     "load_date"
-FROM {{ source('ercot_raw', '60_day_disclosures') }}
-WHERE REGEXP_MATCHES(filename, '60_day_dam_disclosure_dam_energy_bids.*\.parquet')
+FROM source_data

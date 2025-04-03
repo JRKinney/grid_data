@@ -16,15 +16,15 @@ build/
 .idea/
 
 # Local Data
-/data/processed/
-/data/forecasts/
-/data/raw/
-!data/raw/sample_data/
+grid_data/data/processed/
+grid_data/data/forecasts/
+grid_data/data/raw/
+!grid_data/data/raw/sample_data/
 
 # DBT
-dbt_project/target/
-dbt_project/dbt_packages/
-dbt_project/logs/
+grid_data/dbt_project/target/
+grid_data/dbt_project/dbt_packages/
+grid_data/dbt_project/logs/
 
 # DuckDB
 *.db
