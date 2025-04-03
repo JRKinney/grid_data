@@ -45,15 +45,17 @@ duckdb
 ```sql
 select * from stg__60_day_dam_disclosure_dam_energy_bid_awards limit 100
 ```
-
+```mermaid
 graph LR
     raw_prices[(raw/parquet)] --> dbt_assets
     dbt_assets --> stg_prices[(staged/parquet)]
     stg_prices --> forecast_asset
     forecast_asset --> predictions[(forecasts/parquet)]
+```
 
 
 ## Project Structure
+```bash
 .
 ├── Dockerfile
 ├── NOTES.md
@@ -73,6 +75,7 @@ graph LR
 │   ├── requires.txt
 │   └── top_level.txt
 └── pyproject.toml
+```
 
 Recreate with
 ```bash
