@@ -20,9 +20,9 @@ dagster dev
 python grid_data/scripts/initiate_db.py
 ```
 
-2. Setup .env file based on .env_example (copy .env_example and fill in the blanks). For ERCOT this requires a API key which anyone can get. Follow the instructions here: ['https://www.ercot.com/services/api']
+2. Setup .env file based on .env_example (copy .env_example and fill in the blanks). For ERCOT this requires a API key which anyone can get. Follow the instructions on [the ercot website](https://www.ercot.com/services/api): 
 
-3. Test dbt setup --
+3. Test dbt setup
 ```bash
 cd grid_data/dbt_project && dbt debug
 ```
@@ -37,7 +37,7 @@ python grid_data/scripts/fetch_ercot_data.py
 dbt run --models staging.ercot
 ```
 
-6. Look at the models (do this however you'd like but I will use the (duckdb CLI)['https://duckdb.org/docs/stable/clients/cli/overview'])
+6. Look at the models (do this however you'd like but I will use the [duckdb CLI](https://duckdb.org/docs/stable/clients/cli/overview) )
 If you have not already `brew install duckdb`
 ```bash
 duckdb
@@ -54,6 +54,26 @@ graph LR
 
 
 ## Project Structure
+├── Dockerfile
+├── NOTES.md
+├── README.md
+├── __init__.py
+├── docker-compose.yml
+├── grid_data
+│   ├── config.py
+│   ├── dagster_project
+│   ├── data
+│   ├── dbt_project
+│   └── scripts
+├── grid_data.egg-info
+│   ├── PKG-INFO
+│   ├── SOURCES.txt
+│   ├── dependency_links.txt
+│   ├── requires.txt
+│   └── top_level.txt
+└── pyproject.toml
+
+Recreate with
 ```bash
 tree -L 2 -I '.venv|__pycache__'
 ```
