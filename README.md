@@ -54,6 +54,7 @@ graph LR
 
 
 ## Project Structure
+.
 ├── Dockerfile
 ├── NOTES.md
 ├── README.md
