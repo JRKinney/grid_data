@@ -1,7 +1,7 @@
 WITH source_data AS (
-    SELECT 
+    SELECT
         *
-    FROM {{ source('ercot_raw', '60_day_dam_disclosure_dam_energy_bids') }} 
+    FROM {{ source('ercot_raw_60_day_disclosures', '60_day_dam_disclosure_dam_energy_bids') }}
 )
 
 SELECT

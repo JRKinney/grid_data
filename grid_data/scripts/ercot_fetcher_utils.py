@@ -89,12 +89,12 @@ class ErcotFetcher:
         for df_type, data in df.items():
             data["load_date"] = pd.Timestamp.now()
             date_info = f"{self.start_date_str}_{self.end_date_str}_{self.run_timestamp}"
-            data.to_parquet(
+            data.to_csv(
                 self.data_dir
                 / "raw"
                 / "ercot"
                 / "60_day_disclosures"
-                / f"60_day_dam_disclosure_{df_type}__{date_info}_{df_type}.parquet"
+                / f"60_day_dam_disclosure_{df_type}__{date_info}_{df_type}.csv"
             )
 
     def fetch_60_day_sced_disclosure(self) -> None:
@@ -124,12 +124,12 @@ class ErcotFetcher:
         for df_type, data in df.items():
             data["load_date"] = pd.Timestamp.now()
             date_info = f"{self.start_date_str}_{self.end_date_str}_{self.run_timestamp}"
-            data.to_parquet(
+            data.to_csv(
                 self.data_dir
                 / "raw"
                 / "ercot"
                 / "60_day_disclosures"
-                / f"60_day_sced_disclosure_{df_type}__{date_info}_{df_type}.parquet"
+                / f"60_day_sced_disclosure_{df_type}__{date_info}_{df_type}.csv"
             )
 
     def fetch_wind_report(self) -> None:
@@ -148,12 +148,12 @@ class ErcotFetcher:
                 logger.error(f"Error fetching wind report: {e}")
                 time.sleep(1)
 
-        df.to_parquet(
+        df.to_csv(
             self.data_dir
             / "raw"
             / "ercot"
             / "generation"
-            / f"wind_report__{self.start_date_str}_{self.end_date_str}_{self.run_timestamp}.parquet"
+            / f"wind_report__{self.start_date_str}_{self.end_date_str}_{self.run_timestamp}.csv"
         )
 
     def fetch_solar_report(self) -> None:
@@ -172,12 +172,12 @@ class ErcotFetcher:
                 logger.error(f"Error fetching solar report: {e}")
                 time.sleep(1)
 
-        df.to_parquet(
+        df.to_csv(
             self.data_dir
             / "raw"
             / "ercot"
             / "generation"
-            / f"solar_report__{self.start_date_str}_{self.end_date_str}_{self.run_timestamp}.parquet"
+            / f"solar_report__{self.start_date_str}_{self.end_date_str}_{self.run_timestamp}.csv"
         )
 
     def fetch_as_prices(self) -> None:
@@ -196,12 +196,12 @@ class ErcotFetcher:
                 logger.error(f"Error fetching ancillary service prices: {e}")
                 time.sleep(1)
 
-        df.to_parquet(
+        df.to_csv(
             self.data_dir
             / "raw"
             / "ercot"
             / "prices"
-            / f"as_prices__{self.start_date_str}_{self.end_date_str}_{self.run_timestamp}.parquet"
+            / f"as_prices__{self.start_date_str}_{self.end_date_str}_{self.run_timestamp}.csv"
         )
 
     def fetch_as_plan(self) -> None:
@@ -220,12 +220,12 @@ class ErcotFetcher:
                 logger.error(f"Error fetching ancillary service plan: {e}")
                 time.sleep(1)
 
-        df.to_parquet(
+        df.to_csv(
             self.data_dir
             / "raw"
             / "ercot"
             / "market_plans"
-            / f"as_plan__{self.start_date_str}_{self.end_date_str}_{self.run_timestamp}.parquet"
+            / f"as_plan__{self.start_date_str}_{self.end_date_str}_{self.run_timestamp}.csv"
         )
 
     def fetch_zonal_rt_spp(self) -> None:
@@ -247,12 +247,12 @@ class ErcotFetcher:
                 logger.error(f"Error fetching real-time spp for load zones: {e}")
                 time.sleep(1)
 
-        df.to_parquet(
+        df.to_csv(
             self.data_dir
             / "raw"
             / "ercot"
             / "prices"
-            / f"zonal_rt_spp__{self.start_date_str}_{self.end_date_str}_{self.run_timestamp}.parquet"
+            / f"zonal_rt_spp__{self.start_date_str}_{self.end_date_str}_{self.run_timestamp}.csv"
         )
 
     def fetch_zonal_da_spp(self) -> None:
@@ -274,12 +274,12 @@ class ErcotFetcher:
                 logger.error(f"Error fetching day-ahead spp for load zones: {e}")
                 time.sleep(1)
 
-        df.to_parquet(
+        df.to_csv(
             self.data_dir
             / "raw"
             / "ercot"
             / "prices"
-            / f"zonal_da_spp__{self.start_date_str}_{self.end_date_str}_{self.run_timestamp}.parquet"
+            / f"zonal_da_spp__{self.start_date_str}_{self.end_date_str}_{self.run_timestamp}.csv"
         )
 
     def fetch_load_forecast(self) -> None:
@@ -298,12 +298,12 @@ class ErcotFetcher:
                 logger.error(f"Error fetching load forecast: {e}")
                 time.sleep(1)
 
-        df.to_parquet(
+        df.to_csv(
             self.data_dir
             / "raw"
             / "ercot"
             / "load"
-            / f"zonal_load_forecast__{self.start_date_str}_{self.end_date_str}_{self.run_timestamp}.parquet"
+            / f"zonal_load_forecast__{self.start_date_str}_{self.end_date_str}_{self.run_timestamp}.csv"
         )
 
     def fetch_resource_outage_capacity(self) -> None:
@@ -322,12 +322,12 @@ class ErcotFetcher:
                 logger.error(f"Error fetching resource outage capacity: {e}")
                 time.sleep(1)
 
-        df.to_parquet(
+        df.to_csv(
             self.data_dir
             / "raw"
             / "ercot"
             / "generation"
-            / f"resource_outage_capacity__{self.start_date_str}_{self.end_date_str}_{self.run_timestamp}.parquet"
+            / f"resource_outage_capacity__{self.start_date_str}_{self.end_date_str}_{self.run_timestamp}.csv"
         )
 
     def fetch_reported_outages(self) -> None:
@@ -346,12 +346,12 @@ class ErcotFetcher:
                 logger.error(f"Error fetching reported outages: {e}")
                 time.sleep(1)
 
-        df.to_parquet(
+        df.to_csv(
             self.data_dir
             / "raw"
             / "ercot"
             / "generation"
-            / f"reported_outages__{self.start_date_str}_{self.end_date_str}_{self.run_timestamp}.parquet"
+            / f"reported_outages__{self.start_date_str}_{self.end_date_str}_{self.run_timestamp}.csv"
         )
 
     def fetch_temperature_forecast(self) -> None:
@@ -370,12 +370,12 @@ class ErcotFetcher:
                 logger.error(f"Error fetching temperature forecast: {e}")
                 time.sleep(1)
 
-        df.to_parquet(
+        df.to_csv(
             self.data_dir
             / "raw"
             / "ercot"
             / "weather"
-            / f"temperature_forecast__{self.start_date_str}_{self.end_date_str}_{self.run_timestamp}.parquet"
+            / f"temperature_forecast__{self.start_date_str}_{self.end_date_str}_{self.run_timestamp}.csv"
         )
 
     def fetch_system_wide_actual_load(self) -> None:
@@ -394,12 +394,12 @@ class ErcotFetcher:
                 logger.error(f"Error fetching system wide actual load: {e}")
                 time.sleep(1)
 
-        df.to_parquet(
+        df.to_csv(
             self.data_dir
             / "raw"
             / "ercot"
             / "load"
-            / f"system_wide_actual_load__{self.start_date_str}_{self.end_date_str}_{self.run_timestamp}.parquet"
+            / f"system_wide_actual_load__{self.start_date_str}_{self.end_date_str}_{self.run_timestamp}.csv"
         )
 
     def fetch_unplanned_resource_outages(self) -> None:
@@ -418,12 +418,12 @@ class ErcotFetcher:
                 logger.error(f"Error fetching unplanned resource outages: {e}")
                 time.sleep(1)
 
-        df.to_parquet(
+        df.to_csv(
             self.data_dir
             / "raw"
             / "ercot"
             / "generation"
-            / f"unplanned_resource_outages__{self.start_date_str}_{self.end_date_str}_{self.run_timestamp}.parquet"
+            / f"unplanned_resource_outages__{self.start_date_str}_{self.end_date_str}_{self.run_timestamp}.csv"
         )
 
     def fetch_short_term_system_adequacy(self) -> None:
@@ -442,10 +442,10 @@ class ErcotFetcher:
                 logger.error(f"Error fetching short term system adequacy: {e}")
                 time.sleep(1)
 
-        df.to_parquet(
+        df.to_csv(
             self.data_dir
             / "raw"
             / "ercot"
             / "generation"
-            / f"short_term_system_adequacy__{self.start_date_str}_{self.end_date_str}_{self.run_timestamp}.parquet"
+            / f"short_term_system_adequacy__{self.start_date_str}_{self.end_date_str}_{self.run_timestamp}.csv"
         )

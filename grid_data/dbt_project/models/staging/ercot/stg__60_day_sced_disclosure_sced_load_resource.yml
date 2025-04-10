@@ -1,0 +1,135 @@
+version: 2
+
+models:
+  - name: stg60_day_sced_disclosure_sced_load_resource
+    description: "Staged 60-day SCED load resource data from ERCOT"
+    tests: []
+    columns:
+      - name: "Interval Start"
+        description: "Start time of the interval"
+
+      - name: "Interval End"
+        description: "End time of the interval"
+
+      - name: "SCED Time Stamp"
+        description: "Timestamp for the SCED run"
+
+      - name: "Repeated Hour Flag"
+        description: "Flag indicating a repeated hour"
+
+      - name: "QSE"
+        description: "Qualified Scheduling Entity"
+
+      - name: "DME"
+        description: "Designated Market Entity"
+
+      - name: "Resource Name"
+        description: "Name of the load resource"
+
+      - name: "Telemetered Resource Status"
+        description: "Status of the resource as telemetered"
+
+      - name: "Max Power Consumption"
+        description: "Maximum power consumption for the load resource"
+
+      - name: "Low Power Consumption"
+        description: "Low power consumption for the load resource"
+
+      - name: "Real Power Consumption"
+        description: "Actual power consumption of the load resource"
+
+      - name: "AS Responsibility for RRS"
+        description: "Ancillary Service responsibility for Responsive Reserve Service"
+
+      - name: "AS Responsibility for RRSFFR"
+        description: "Ancillary Service responsibility for Responsive Reserve Service - Fast Frequency Response"
+
+      - name: "AS Responsibility for NonSpin"
+        description: "Ancillary Service responsibility for Non-Spinning Reserve"
+
+      - name: "AS Responsibility for RegUp"
+        description: "Ancillary Service responsibility for Regulation Up"
+
+      - name: "AS Responsibility for RegDown"
+        description: "Ancillary Service responsibility for Regulation Down"
+
+      - name: "AS Responsibility for ECRS"
+        description: "Ancillary Service responsibility for ERCOT Contingency Reserve Service"
+
+      - name: "SCED Bid to Buy Curve-MW1"
+        description: "SCED bid to buy curve MW for price point 1"
+
+      - name: "SCED Bid to Buy Curve-Price1"
+        description: "SCED bid to buy curve price for price point 1"
+
+      - name: "SCED Bid to Buy Curve-MW2"
+        description: "SCED bid to buy curve MW for price point 2"
+
+      - name: "SCED Bid to Buy Curve-Price2"
+        description: "SCED bid to buy curve price for price point 2"
+
+      - name: "SCED Bid to Buy Curve-MW3"
+        description: "SCED bid to buy curve MW for price point 3"
+
+      - name: "SCED Bid to Buy Curve-Price3"
+        description: "SCED bid to buy curve price for price point 3"
+
+      - name: "SCED Bid to Buy Curve-MW4"
+        description: "SCED bid to buy curve MW for price point 4"
+
+      - name: "SCED Bid to Buy Curve-Price4"
+        description: "SCED bid to buy curve price for price point 4"
+
+      - name: "SCED Bid to Buy Curve-MW5"
+        description: "SCED bid to buy curve MW for price point 5"
+
+      - name: "SCED Bid to Buy Curve-Price5"
+        description: "SCED bid to buy curve price for price point 5"
+
+      - name: "SCED Bid to Buy Curve-MW6"
+        description: "SCED bid to buy curve MW for price point 6"
+
+      - name: "SCED Bid to Buy Curve-Price6"
+        description: "SCED bid to buy curve price for price point 6"
+
+      - name: "SCED Bid to Buy Curve-MW7"
+        description: "SCED bid to buy curve MW for price point 7"
+
+      - name: "SCED Bid to Buy Curve-Price7"
+        description: "SCED bid to buy curve price for price point 7"
+
+      - name: "SCED Bid to Buy Curve-MW8"
+        description: "SCED bid to buy curve MW for price point 8"
+
+      - name: "SCED Bid to Buy Curve-Price8"
+        description: "SCED bid to buy curve price for price point 8"
+
+      - name: "SCED Bid to Buy Curve-MW9"
+        description: "SCED bid to buy curve MW for price point 9"
+
+      - name: "SCED Bid to Buy Curve-Price9"
+        description: "SCED bid to buy curve price for price point 9"
+
+      - name: "SCED Bid to Buy Curve-MW10"
+        description: "SCED bid to buy curve MW for price point 10"
+
+      - name: "SCED Bid to Buy Curve-Price10"
+        description: "SCED bid to buy curve price for price point 10"
+
+      - name: "HASL"
+        description: "High Ancillary Service Limit"
+
+      - name: "HDL"
+        description: "High Dispatch Limit"
+
+      - name: "LASL"
+        description: "Low Ancillary Service Limit"
+
+      - name: "LDL"
+        description: "Low Dispatch Limit"
+
+      - name: "Base Point"
+        description: "SCED base point for the resource"
+
+      - name: "load_date"
+        description: "Date when the data was loaded"

@@ -1,7 +1,7 @@
 version: 2
 
 sources:
-  - name: ercot_raw
+  - name: ercot_raw_60_day_disclosures
     schema: main
     tables:
       - name: 60_day_dam_disclosure_dam_energy_bid_awards
@@ -32,5 +32,20 @@ sources:
       - name: 60_day_dam_disclosure_dam_load_resource
         meta:
           external_location: "../data/raw/ercot/60_day_disclosures/60_day_dam_disclosure_dam_load_resource__*.parquet"
+          file_format: parquet
+          auto_refresh: true
+      - name: 60_day_sced_disclosure_sced_gen_resource
+        meta:
+          external_location: "../data/raw/ercot/60_day_disclosures/60_day_sced_disclosure_sced_gen_resource__*.parquet"
+          file_format: parquet
+          auto_refresh: true
+      - name: 60_day_sced_disclosure_sced_load_resource
+        meta:
+          external_location: "../data/raw/ercot/60_day_disclosures/60_day_sced_disclosure_sced_load_resource__*.parquet"
+          file_format: parquet
+          auto_refresh: true
+      - name: 60_day_sced_disclosure_sced_smne
+        meta:
+          external_location: "../data/raw/ercot/60_day_disclosures/60_day_sced_disclosure_sced_smne__*.parquet"
           file_format: parquet
           auto_refresh: true
