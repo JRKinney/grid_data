@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: stg60_day_sced_disclosure_sced_smne
+  - name: stg__60_day_sced_disclosure_sced_smne
     description: "Staged 60-day SCED Shadow Marginal Node Electricity prices from ERCOT"
     tests: []
     columns:

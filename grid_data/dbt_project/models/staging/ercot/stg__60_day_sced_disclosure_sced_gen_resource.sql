@@ -163,7 +163,7 @@ SELECT
     "LDL",
     "Telemetered Resource Status",
     "Base Point",
-    "Telemetered Net Output",
+    "Telemetered Net Output " as "Telemetered Net Output",
     "Ancillary Service REGUP",
     "Ancillary Service REGDN",
     "Ancillary Service RRS",

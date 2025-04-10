@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: stg60_day_sced_disclosure_sced_load_resource
+  - name: stg__60_day_sced_disclosure_sced_load_resource
     description: "Staged 60-day SCED load resource data from ERCOT"
     tests: []
     columns:
