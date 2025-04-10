@@ -28,3 +28,17 @@ if __name__ == "__main__":
 
     # Fetch disclosures
     ercot_fetcher.fetch_60_day_dam_disclosures()
+    ercot_fetcher.fetch_60_day_sced_disclosure()
+    ercot_fetcher.fetch_wind_report()
+    ercot_fetcher.fetch_solar_report()
+    ercot_fetcher.fetch_as_prices()
+    ercot_fetcher.fetch_as_plan()
+    ercot_fetcher.fetch_zonal_rt_spp()
+    ercot_fetcher.fetch_zonal_da_spp()
+    ercot_fetcher.fetch_load_forecast()
+    ercot_fetcher.fetch_resource_outage_capacity()
+    ercot_fetcher.fetch_reported_outages()
+    ercot_fetcher.fetch_temperature_forecast()
+    ercot_fetcher.fetch_system_wide_actual_load()
+    ercot_fetcher.fetch_unplanned_resource_outages()
+    ercot_fetcher.fetch_short_term_system_adequacy()

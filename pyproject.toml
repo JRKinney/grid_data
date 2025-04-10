@@ -10,7 +10,7 @@ dependencies = [
   "duckdb",
   "pandas",
   "pyarrow",
-  "gridstatus",
+  "gridstatus @ git+https://github.com/gridstatus/gridstatus.git@2874bb3b497a4c1e329fba7b755e154aca782945",
   "loguru",
   "python-dotenv"
 ]
