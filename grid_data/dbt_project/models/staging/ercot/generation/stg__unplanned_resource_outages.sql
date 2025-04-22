@@ -16,6 +16,7 @@ SELECT
     "Nature Of Work" AS nature_of_work,
     "Available MW Maximum" AS available_mw_maximum,
     "Available MW During Outage" AS available_mw_during_outage,
-    "Effective MW Reduction Due to Outage" AS effective_mw_reduction_due_to_outage,
+    "Effective MW Reduction Due to Outage"
+        AS effective_mw_reduction_due_to_outage,
     load_date
 FROM source_data

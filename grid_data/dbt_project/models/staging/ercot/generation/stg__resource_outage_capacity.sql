@@ -5,7 +5,7 @@ WITH source_data AS (
 
 SELECT
     "Publish Time" AS publish_time,
-    "Time" AS time,
+    "Time" AS "time", -- noqa
     "Interval Start" AS interval_start,
     "Interval End" AS interval_end,
     "Total Resource MW Zone South" AS total_resource_mw_zone_south,

@@ -6,11 +6,11 @@ WITH source_data AS (
 )
 
 SELECT
-    "Time" AS time,
+    "Time" AS time, -- noqa
     "Interval Start" AS interval_start,
     "Interval End" AS interval_end,
-    "QSE" AS qse,
-    "DME" AS dme,
+    "QSE" AS qse, -- noqa
+    "DME" AS dme, -- noqa
     "Resource Name" AS resource_name,
     "Resource Type" AS resource_type,
     "QSE submitted Curve-MW1" AS qse_submitted_curve_mw1,
@@ -37,8 +37,8 @@ SELECT
     "Start Up Inter" AS start_up_inter,
     "Start Up Cold" AS start_up_cold,
     "Min Gen Cost" AS min_gen_cost,
-    "HSL" AS hsl,
-    "LSL" AS lsl,
+    "HSL" AS hsl, -- noqa
+    "LSL" AS lsl, -- noqa
     "Resource Status" AS resource_status,
     "Awarded Quantity" AS awarded_quantity,
     "Settlement Point Name" AS settlement_point_name,

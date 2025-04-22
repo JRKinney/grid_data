@@ -24,5 +24,6 @@ SELECT
     "Available Capacity Reserve" AS available_capacity_reserve,
     "Capacity Generation Resource Total" AS capacity_generation_resource_total,
     "Capacity Load Resource Total" AS capacity_load_resource_total,
-    "Offline Available MW Total" AS offline_available_mw_total
+    "Offline Available MW Total" AS offline_available_mw_total,
+    load_date
 FROM source_data

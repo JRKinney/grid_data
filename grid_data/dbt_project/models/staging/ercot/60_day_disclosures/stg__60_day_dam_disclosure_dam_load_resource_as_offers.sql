@@ -6,11 +6,11 @@ WITH source_data AS (
 )
 
 SELECT
-    "Time" AS time,
+    "Time" AS time, -- noqa
     "Interval Start" AS interval_start,
     "Interval End" AS interval_end,
-    "QSE" AS qse,
-    "DME" AS dme,
+    "QSE" AS qse, -- noqa
+    "DME" AS dme, -- noqa
     "Load Resource Name" AS load_resource_name,
     "Multi-Hour Block Flag" AS multi_hour_block_flag,
     "BLOCK INDICATOR1" AS block_indicator1,

@@ -6,7 +6,7 @@ WITH source_data AS (
 )
 
 SELECT
-    "Time" AS time,
+    "Time" AS time, -- noqa
     "Interval Start" AS interval_start,
     "Interval End" AS interval_end,
     "Load Resource Name" AS load_resource_name,

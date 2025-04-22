@@ -10,8 +10,8 @@ SELECT
     "Interval End" AS interval_end,
     "SCED Time Stamp" AS sced_time_stamp,
     "Repeated Hour Flag" AS repeated_hour_flag,
-    "QSE" AS qse,
-    "DME" AS dme,
+    "QSE" AS qse, -- noqa
+    "DME" AS dme, -- noqa
     "Resource Name" AS resource_name,
     "Resource Type" AS resource_type,
     "SCED1 Curve-MW1" AS sced1_curve_mw1,
@@ -155,12 +155,12 @@ SELECT
     "SCED2 Curve-MW35" AS sced2_curve_mw35,
     "SCED2 Curve-Price35" AS sced2_curve_price35,
     "Output Schedule" AS output_schedule,
-    "HSL" AS hsl,
-    "HASL" AS hasl,
-    "HDL" AS hdl,
-    "LSL" AS lsl,
-    "LASL" AS lasl,
-    "LDL" AS ldl,
+    "HSL" AS hsl, -- noqa
+    "HASL" AS hasl, -- noqa
+    "HDL" AS hdl, -- noqa
+    "LSL" AS lsl, -- noqa
+    "LASL" AS lasl, -- noqa
+    "LDL" AS ldl, -- noqa
     "Telemetered Resource Status" AS telemetered_resource_status,
     "Base Point" AS base_point,
     "Telemetered Net Output" AS telemetered_net_output,
@@ -170,7 +170,7 @@ SELECT
     "Ancillary Service RRSFFR" AS ancillary_service_rrsffr,
     "Ancillary Service NSRS" AS ancillary_service_nsrs,
     "Ancillary Service ECRS" AS ancillary_service_ecrs,
-    "Bid_Type" AS bid_type,
+    "Bid_Type" AS bid_type, -- noqa
     "Start Up Cold Offer" AS start_up_cold_offer,
     "Start Up Hot Offer" AS start_up_hot_offer,
     "Start Up Inter Offer" AS start_up_inter_offer,

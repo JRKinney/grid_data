@@ -10,8 +10,8 @@ SELECT
     "Interval End" AS interval_end,
     "SCED Time Stamp" AS sced_time_stamp,
     "Repeated Hour Flag" AS repeated_hour_flag,
-    "QSE" AS qse,
-    "DME" AS dme,
+    "QSE" AS qse, -- noqa
+    "DME" AS dme, -- noqa
     "Resource Name" AS resource_name,
     "Telemetered Resource Status" AS telemetered_resource_status,
     "Max Power Consumption" AS max_power_consumption,
@@ -43,10 +43,10 @@ SELECT
     "SCED Bid to Buy Curve-Price9" AS sced_bid_to_buy_curve_price9,
     "SCED Bid to Buy Curve-MW10" AS sced_bid_to_buy_curve_mw10,
     "SCED Bid to Buy Curve-Price10" AS sced_bid_to_buy_curve_price10,
-    "HASL" AS hasl,
-    "HDL" AS hdl,
-    "LASL" AS lasl,
-    "LDL" AS ldl,
+    "HASL" AS hasl, -- noqa
+    "HDL" AS hdl, -- noqa
+    "LASL" AS lasl, -- noqa
+    "LDL" AS ldl, -- noqa
     "Base Point" AS base_point,
     load_date
 FROM source_data
