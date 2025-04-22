@@ -1,0 +1,48 @@
+version: 2
+
+models:
+  - name: stg__unplanned_resource_outages
+    description: "Staged unplanned resource outages data from ERCOT"
+    tests: []
+    columns:
+      - name: current_as_of
+        description: "Timestamp showing when this data was last updated"
+
+      - name: publish_time
+        description: "Timestamp when the data was published by ERCOT"
+
+      - name: actual_outage_start
+        description: "Actual start time of the resource outage"
+
+      - name: planned_end_date
+        description: "Planned end date and time of the resource outage"
+
+      - name: actual_end_date
+        description: "Actual end date and time of the resource outage (if completed)"
+
+      - name: resource_name
+        description: "Name of the generation resource experiencing the outage"
+
+      - name: resource_unit_code
+        description: "Unique code identifying the generation resource unit"
+
+      - name: fuel_type
+        description: "Type of fuel used by the generation resource (e.g., gas, coal, nuclear)"
+
+      - name: outage_type
+        description: "Type of outage (e.g., forced, maintenance)"
+
+      - name: nature_of_work
+        description: "Description of the work being performed during the outage"
+
+      - name: available_mw_maximum
+        description: "Maximum MW capacity of the resource when fully available"
+
+      - name: available_mw_during_outage
+        description: "Available MW capacity of the resource during the outage"
+
+      - name: effective_mw_reduction_due_to_outage
+        description: "Effective reduction in MW capacity due to the outage"
+
+      - name: load_date
+        description: "Date when the data was loaded"

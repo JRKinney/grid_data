@@ -1,0 +1,72 @@
+version: 2
+
+models:
+  - name: stg__wind_report
+    description: "Staged wind generation report data from ERCOT"
+    tests: []
+    columns:
+      - name: publish_time
+        description: "Timestamp when the data was published by ERCOT"
+
+      - name: time
+        description: "Timestamp of the wind generation data"
+
+      - name: interval_start
+        description: "Start time of the interval for wind generation data"
+
+      - name: interval_end
+        description: "End time of the interval for wind generation data"
+
+      - name: gen_system_wide
+        description: "Actual wind generation across the entire ERCOT system (in MW)"
+
+      - name: cop_hsl_system_wide
+        description: "Current Operating Plan High Sustained Limit for wind resources system-wide (in MW)"
+
+      - name: stwpf_system_wide
+        description: "Short-Term Wind Power Forecast for the entire ERCOT system (in MW)"
+
+      - name: wgrpp_system_wide
+        description: "Wind Generation Resource Performance Prediction for the entire ERCOT system (in MW)"
+
+      - name: gen_lz_south_houston
+        description: "Actual wind generation in the South/Houston load zone (in MW)"
+
+      - name: cop_hsl_lz_south_houston
+        description: "Current Operating Plan High Sustained Limit for wind resources in South/Houston zone (in MW)"
+
+      - name: stwpf_lz_south_houston
+        description: "Short-Term Wind Power Forecast for the South/Houston load zone (in MW)"
+
+      - name: wgrpp_lz_south_houston
+        description: "Wind Generation Resource Performance Prediction for the South/Houston load zone (in MW)"
+
+      - name: gen_lz_west
+        description: "Actual wind generation in the West load zone (in MW)"
+
+      - name: cop_hsl_lz_west
+        description: "Current Operating Plan High Sustained Limit for wind resources in West zone (in MW)"
+
+      - name: stwpf_lz_west
+        description: "Short-Term Wind Power Forecast for the West load zone (in MW)"
+
+      - name: wgrpp_lz_west
+        description: "Wind Generation Resource Performance Prediction for the West load zone (in MW)"
+
+      - name: gen_lz_north
+        description: "Actual wind generation in the North load zone (in MW)"
+
+      - name: cop_hsl_lz_north
+        description: "Current Operating Plan High Sustained Limit for wind resources in North zone (in MW)"
+
+      - name: stwpf_lz_north
+        description: "Short-Term Wind Power Forecast for the North load zone (in MW)"
+
+      - name: wgrpp_lz_north
+        description: "Wind Generation Resource Performance Prediction for the North load zone (in MW)"
+
+      - name: hsl_system_wide
+        description: "High Sustained Limit for wind resources across the entire ERCOT system (in MW)"
+
+      - name: load_date
+        description: "Date when the data was loaded"

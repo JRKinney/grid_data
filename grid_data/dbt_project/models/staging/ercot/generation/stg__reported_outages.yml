@@ -1,0 +1,39 @@
+version: 2
+
+models:
+  - name: stg__reported_outages
+    description: "Staged reported outages data from ERCOT"
+    tests: []
+    columns:
+      - name: time
+        description: "Timestamp of the reported outage"
+
+      - name: combined_unplanned
+        description: "Total unplanned outages across all generation types (in MW)"
+
+      - name: combined_planned
+        description: "Total planned outages across all generation types (in MW)"
+
+      - name: combined_total
+        description: "Total combined planned and unplanned outages across all generation types (in MW)"
+
+      - name: dispatchable_unplanned
+        description: "Unplanned outages for dispatchable generation resources (in MW)"
+
+      - name: dispatchable_planned
+        description: "Planned outages for dispatchable generation resources (in MW)"
+
+      - name: dispatchable_total
+        description: "Total outages for dispatchable generation resources (in MW)"
+
+      - name: renewable_unplanned
+        description: "Unplanned outages for renewable generation resources (in MW)"
+
+      - name: renewable_planned
+        description: "Planned outages for renewable generation resources (in MW)"
+
+      - name: renewable_total
+        description: "Total outages for renewable generation resources (in MW)"
+
+      - name: load_date
+        description: "Date when the data was loaded"

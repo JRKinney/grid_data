@@ -1,0 +1,126 @@
+version: 2
+
+models:
+  - name: stg__60_day_sced_disclosure_sced_gen_resource
+    description: "Staged 60-day SCED generation resource data from ERCOT"
+    tests: []
+    columns:
+      - name: interval_start
+        description: "Start time of the interval"
+
+      - name: interval_end
+        description: "End time of the interval"
+
+      - name: sced_time_stamp
+        description: "Timestamp for the SCED run"
+
+      - name: repeated_hour_flag
+        description: "Flag indicating a repeated hour"
+
+      - name: qse
+        description: "Qualified Scheduling Entity"
+
+      - name: dme
+        description: "Designated Market Entity"
+
+      - name: resource_name
+        description: "Name of the generation resource"
+
+      - name: resource_type
+        description: "Type of generation resource"
+
+      - name: sced1_curve_mw1
+        description: "SCED1 curve MW for price point 1"
+
+      - name: sced1_curve_price1
+        description: "SCED1 curve price for price point 1"
+
+      # Additional SCED1 curve MW/Price points 2-35 would follow the same pattern
+      # Abbreviated for readability
+
+      - name: sced2_curve_mw1
+        description: "SCED2 curve MW for price point 1"
+
+      - name: sced2_curve_price1
+        description: "SCED2 curve price for price point 1"
+
+      # Additional SCED2 curve MW/Price points 2-35 would follow the same pattern
+      # Abbreviated for readability
+
+      - name: output_schedule
+        description: "Scheduled output for the resource"
+
+      - name: hsl
+        description: "High Sustained Limit"
+
+      - name: hasl
+        description: "High Ancillary Service Limit"
+
+      - name: hdl
+        description: "High Dispatch Limit"
+
+      - name: lsl
+        description: "Low Sustained Limit"
+
+      - name: lasl
+        description: "Low Ancillary Service Limit"
+
+      - name: ldl
+        description: "Low Dispatch Limit"
+
+      - name: telemetered_resource_status
+        description: "Status of the resource as telemetered"
+
+      - name: base_point
+        description: "SCED base point for the resource"
+
+      - name: telemetered_net_output
+        description: "Net output as telemetered"
+
+      - name: ancillary_service_regup
+        description: "Regulation Up service"
+
+      - name: ancillary_service_regdn
+        description: "Regulation Down service"
+
+      - name: ancillary_service_rrs
+        description: "Responsive Reserve Service"
+
+      - name: ancillary_service_rrsffr
+        description: "Responsive Reserve Service - Fast Frequency Response"
+
+      - name: ancillary_service_nsrs
+        description: "Non-Spinning Reserve Service"
+
+      - name: ancillary_service_ecrs
+        description: "ERCOT Contingency Reserve Service"
+
+      - name: bid_type
+        description: "Type of bid submitted"
+
+      - name: start_up_cold_offer
+        description: "Cold start-up offer price"
+
+      - name: start_up_hot_offer
+        description: "Hot start-up offer price"
+
+      - name: start_up_inter_offer
+        description: "Intermediate start-up offer price"
+
+      - name: min_gen_cost
+        description: "Minimum generation cost"
+
+      - name: submitted_tpo_mw1
+        description: "Submitted Three-Part Offer MW for price point 1"
+
+      - name: submitted_tpo_price1
+        description: "Submitted Three-Part Offer price for price point 1"
+
+      # Additional Submitted TPO MW/Price points 2-10 would follow the same pattern
+      # Abbreviated for readability
+
+      - name: proxy_extension
+        description: "Proxy extension indicator"
+
+      - name: load_date
+        description: "Date when the data was loaded"

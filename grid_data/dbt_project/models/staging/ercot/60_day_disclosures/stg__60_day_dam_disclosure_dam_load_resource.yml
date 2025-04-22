@@ -1,195 +1,198 @@
 version: 2
 
 models:
-  - name: stg__60_day_dam_disclosure_dam_gen_resource_as_offers
-    description: "Staged 60-day DAM generation resource ancillary service offers from ERCOT"
+  - name: stg__60_day_dam_disclosure_dam_load_resource_as_offers
+    description: "Staged 60-day DAM load resource ancillary service offers from ERCOT"
     tests: []
     columns:
       - name: Time
         description: "Time of the offer"
-      
+
       - name: "Interval Start"
         description: "Start time of the interval"
-      
+
       - name: "Interval End"
         description: "End time of the interval"
-      
+
       - name: "QSE"
         description: "Qualified Scheduling Entity"
-      
+
       - name: "DME"
         description: "Designated Market Entity"
-      
-      - name: "Generation Resource Name"
-        description: "Name of the generation resource"
-      
+
+      - name: "Load Resource Name"
+        description: "Name of the load resource"
+
       - name: "Multi-Hour Block Flag"
         description: "Flag indicating multi-hour block offers"
-      
+
       - name: "BLOCK INDICATOR1"
         description: "Block indicator for price point 1"
-      
+
       - name: "PRICE1 RRSPFR"
         description: "Price for Responsive Reserve Service - Primary Frequency Response for price point 1"
-      
+
       - name: "PRICE1 RRSFFR"
         description: "Price for Responsive Reserve Service - Fast Frequency Response for price point 1"
-      
+
       - name: "PRICE1 RRSUFR"
         description: "Price for Responsive Reserve Service - Under Frequency Response for price point 1"
-      
+
       - name: "PRICE1 ECRS"
         description: "Price for ERCOT Contingency Reserve Service for price point 1"
-      
+
       - name: "PRICE1 OFFEC"
         description: "Price for Off-line ERCOT Contingency Reserve for price point 1"
-      
+
       - name: "PRICE1 ONLINE NONSPIN"
         description: "Price for Online Non-Spinning Reserve for price point 1"
-      
+
       - name: "PRICE1 REGUP"
         description: "Price for Regulation Up Service for price point 1"
-      
+
       - name: "PRICE1 REGDOWN"
         description: "Price for Regulation Down Service for price point 1"
-      
+
       - name: "PRICE1 OFFLINE NONSPIN"
         description: "Price for Offline Non-Spinning Reserve for price point 1"
-      
+
       - name: "QUANTITY MW1"
         description: "Quantity in MW for price point 1"
-      
+
       - name: "BLOCK INDICATOR2"
         description: "Block indicator for price point 2"
-      
+
       - name: "PRICE2 RRSPFR"
         description: "Price for Responsive Reserve Service - Primary Frequency Response for price point 2"
-      
+
       - name: "PRICE2 RRSFFR"
         description: "Price for Responsive Reserve Service - Fast Frequency Response for price point 2"
-      
+
       - name: "PRICE2 RRSUFR"
         description: "Price for Responsive Reserve Service - Under Frequency Response for price point 2"
-      
+
       - name: "PRICE2 ECRS"
         description: "Price for ERCOT Contingency Reserve Service for price point 2"
-      
+
       - name: "PRICE2 OFFEC"
         description: "Price for Off-line ERCOT Contingency Reserve for price point 2"
-      
+
       - name: "PRICE2 ONLINE NONSPIN"
         description: "Price for Online Non-Spinning Reserve for price point 2"
-      
+
       - name: "PRICE2 REGUP"
         description: "Price for Regulation Up Service for price point 2"
-      
+
       - name: "PRICE2 REGDOWN"
         description: "Price for Regulation Down Service for price point 2"
-      
+
       - name: "PRICE2 OFFLINE NONSPIN"
         description: "Price for Offline Non-Spinning Reserve for price point 2"
-      
+
       - name: "QUANTITY MW2"
         description: "Quantity in MW for price point 2"
-      
+
       - name: "BLOCK INDICATOR3"
         description: "Block indicator for price point 3"
-      
+
       - name: "PRICE3 RRSPFR"
         description: "Price for Responsive Reserve Service - Primary Frequency Response for price point 3"
-      
+
       - name: "PRICE3 RRSFFR"
         description: "Price for Responsive Reserve Service - Fast Frequency Response for price point 3"
-      
+
       - name: "PRICE3 RRSUFR"
         description: "Price for Responsive Reserve Service - Under Frequency Response for price point 3"
-      
+
       - name: "PRICE3 ECRS"
         description: "Price for ERCOT Contingency Reserve Service for price point 3"
-      
+
       - name: "PRICE3 OFFEC"
         description: "Price for Off-line ERCOT Contingency Reserve for price point 3"
-      
+
       - name: "PRICE3 ONLINE NONSPIN"
         description: "Price for Online Non-Spinning Reserve for price point 3"
-      
+
       - name: "PRICE3 REGUP"
         description: "Price for Regulation Up Service for price point 3"
-      
+
       - name: "PRICE3 REGDOWN"
         description: "Price for Regulation Down Service for price point 3"
-      
+
       - name: "PRICE3 OFFLINE NONSPIN"
         description: "Price for Offline Non-Spinning Reserve for price point 3"
-      
+
       - name: "QUANTITY MW3"
         description: "Quantity in MW for price point 3"
-      
+
       - name: "BLOCK INDICATOR4"
         description: "Block indicator for price point 4"
-      
+
       - name: "PRICE4 RRSPFR"
         description: "Price for Responsive Reserve Service - Primary Frequency Response for price point 4"
-      
+
       - name: "PRICE4 RRSFFR"
         description: "Price for Responsive Reserve Service - Fast Frequency Response for price point 4"
-      
+
       - name: "PRICE4 RRSUFR"
         description: "Price for Responsive Reserve Service - Under Frequency Response for price point 4"
-      
+
       - name: "PRICE4 ECRS"
         description: "Price for ERCOT Contingency Reserve Service for price point 4"
-      
+
       - name: "PRICE4 OFFEC"
         description: "Price for Off-line ERCOT Contingency Reserve for price point 4"
-      
+
       - name: "PRICE4 ONLINE NONSPIN"
         description: "Price for Online Non-Spinning Reserve for price point 4"
-      
+
       - name: "PRICE4 REGUP"
         description: "Price for Regulation Up Service for price point 4"
-      
+
       - name: "PRICE4 REGDOWN"
         description: "Price for Regulation Down Service for price point 4"
-      
+
       - name: "PRICE4 OFFLINE NONSPIN"
         description: "Price for Offline Non-Spinning Reserve for price point 4"
-      
+
       - name: "QUANTITY MW4"
         description: "Quantity in MW for price point 4"
-      
+
       - name: "BLOCK INDICATOR5"
         description: "Block indicator for price point 5"
-      
+
       - name: "PRICE5 RRSPFR"
         description: "Price for Responsive Reserve Service - Primary Frequency Response for price point 5"
-      
+
       - name: "PRICE5 RRSFFR"
         description: "Price for Responsive Reserve Service - Fast Frequency Response for price point 5"
-      
+
       - name: "PRICE5 RRSUFR"
         description: "Price for Responsive Reserve Service - Under Frequency Response for price point 5"
-      
+
       - name: "PRICE5 ECRS"
         description: "Price for ERCOT Contingency Reserve Service for price point 5"
-      
+
       - name: "PRICE5 OFFEC"
         description: "Price for Off-line ERCOT Contingency Reserve for price point 5"
-      
+
       - name: "PRICE5 ONLINE NONSPIN"
         description: "Price for Online Non-Spinning Reserve for price point 5"
-      
+
       - name: "PRICE5 REGUP"
         description: "Price for Regulation Up Service for price point 5"
-      
+
       - name: "PRICE5 REGDOWN"
         description: "Price for Regulation Down Service for price point 5"
-      
+
       - name: "PRICE5 OFFLINE NONSPIN"
         description: "Price for Offline Non-Spinning Reserve for price point 5"
-      
+
       - name: "QUANTITY MW5"
         description: "Quantity in MW for price point 5"
-      
+
+      - name: "NCLR Flag"
+        description: "Non-Controllable Load Resource flag"
+
       - name: load_date
         description: "Date when the data was loaded"

@@ -5,131 +5,131 @@ models:
     description: "Staged 60-day SCED load resource data from ERCOT"
     tests: []
     columns:
-      - name: "Interval Start"
+      - name: interval_start
         description: "Start time of the interval"
 
-      - name: "Interval End"
+      - name: interval_end
         description: "End time of the interval"
 
-      - name: "SCED Time Stamp"
+      - name: sced_time_stamp
         description: "Timestamp for the SCED run"
 
-      - name: "Repeated Hour Flag"
+      - name: repeated_hour_flag
         description: "Flag indicating a repeated hour"
 
-      - name: "QSE"
+      - name: qse
         description: "Qualified Scheduling Entity"
 
-      - name: "DME"
+      - name: dme
         description: "Designated Market Entity"
 
-      - name: "Resource Name"
+      - name: resource_name
         description: "Name of the load resource"
 
-      - name: "Telemetered Resource Status"
+      - name: telemetered_resource_status
         description: "Status of the resource as telemetered"
 
-      - name: "Max Power Consumption"
+      - name: max_power_consumption
         description: "Maximum power consumption for the load resource"
 
-      - name: "Low Power Consumption"
+      - name: low_power_consumption
         description: "Low power consumption for the load resource"
 
-      - name: "Real Power Consumption"
+      - name: real_power_consumption
         description: "Actual power consumption of the load resource"
 
-      - name: "AS Responsibility for RRS"
+      - name: as_responsibility_for_rrs
         description: "Ancillary Service responsibility for Responsive Reserve Service"
 
-      - name: "AS Responsibility for RRSFFR"
+      - name: as_responsibility_for_rrsffr
         description: "Ancillary Service responsibility for Responsive Reserve Service - Fast Frequency Response"
 
-      - name: "AS Responsibility for NonSpin"
+      - name: as_responsibility_for_nonspin
         description: "Ancillary Service responsibility for Non-Spinning Reserve"
 
-      - name: "AS Responsibility for RegUp"
+      - name: as_responsibility_for_regup
         description: "Ancillary Service responsibility for Regulation Up"
 
-      - name: "AS Responsibility for RegDown"
+      - name: as_responsibility_for_regdown
         description: "Ancillary Service responsibility for Regulation Down"
 
-      - name: "AS Responsibility for ECRS"
+      - name: as_responsibility_for_ecrs
         description: "Ancillary Service responsibility for ERCOT Contingency Reserve Service"
 
-      - name: "SCED Bid to Buy Curve-MW1"
+      - name: sced_bid_to_buy_curve_mw1
         description: "SCED bid to buy curve MW for price point 1"
 
-      - name: "SCED Bid to Buy Curve-Price1"
+      - name: sced_bid_to_buy_curve_price1
         description: "SCED bid to buy curve price for price point 1"
 
-      - name: "SCED Bid to Buy Curve-MW2"
+      - name: sced_bid_to_buy_curve_mw2
         description: "SCED bid to buy curve MW for price point 2"
 
-      - name: "SCED Bid to Buy Curve-Price2"
+      - name: sced_bid_to_buy_curve_price2
         description: "SCED bid to buy curve price for price point 2"
 
-      - name: "SCED Bid to Buy Curve-MW3"
+      - name: sced_bid_to_buy_curve_mw3
         description: "SCED bid to buy curve MW for price point 3"
 
-      - name: "SCED Bid to Buy Curve-Price3"
+      - name: sced_bid_to_buy_curve_price3
         description: "SCED bid to buy curve price for price point 3"
 
-      - name: "SCED Bid to Buy Curve-MW4"
+      - name: sced_bid_to_buy_curve_mw4
         description: "SCED bid to buy curve MW for price point 4"
 
-      - name: "SCED Bid to Buy Curve-Price4"
+      - name: sced_bid_to_buy_curve_price4
         description: "SCED bid to buy curve price for price point 4"
 
-      - name: "SCED Bid to Buy Curve-MW5"
+      - name: sced_bid_to_buy_curve_mw5
         description: "SCED bid to buy curve MW for price point 5"
 
-      - name: "SCED Bid to Buy Curve-Price5"
+      - name: sced_bid_to_buy_curve_price5
         description: "SCED bid to buy curve price for price point 5"
 
-      - name: "SCED Bid to Buy Curve-MW6"
+      - name: sced_bid_to_buy_curve_mw6
         description: "SCED bid to buy curve MW for price point 6"
 
-      - name: "SCED Bid to Buy Curve-Price6"
+      - name: sced_bid_to_buy_curve_price6
         description: "SCED bid to buy curve price for price point 6"
 
-      - name: "SCED Bid to Buy Curve-MW7"
+      - name: sced_bid_to_buy_curve_mw7
         description: "SCED bid to buy curve MW for price point 7"
 
-      - name: "SCED Bid to Buy Curve-Price7"
+      - name: sced_bid_to_buy_curve_price7
         description: "SCED bid to buy curve price for price point 7"
 
-      - name: "SCED Bid to Buy Curve-MW8"
+      - name: sced_bid_to_buy_curve_mw8
         description: "SCED bid to buy curve MW for price point 8"
 
-      - name: "SCED Bid to Buy Curve-Price8"
+      - name: sced_bid_to_buy_curve_price8
         description: "SCED bid to buy curve price for price point 8"
 
-      - name: "SCED Bid to Buy Curve-MW9"
+      - name: sced_bid_to_buy_curve_mw9
         description: "SCED bid to buy curve MW for price point 9"
 
-      - name: "SCED Bid to Buy Curve-Price9"
+      - name: sced_bid_to_buy_curve_price9
         description: "SCED bid to buy curve price for price point 9"
 
-      - name: "SCED Bid to Buy Curve-MW10"
+      - name: sced_bid_to_buy_curve_mw10
         description: "SCED bid to buy curve MW for price point 10"
 
-      - name: "SCED Bid to Buy Curve-Price10"
+      - name: sced_bid_to_buy_curve_price10
         description: "SCED bid to buy curve price for price point 10"
 
-      - name: "HASL"
+      - name: hasl
         description: "High Ancillary Service Limit"
 
-      - name: "HDL"
+      - name: hdl
         description: "High Dispatch Limit"
 
-      - name: "LASL"
+      - name: lasl
         description: "Low Ancillary Service Limit"
 
-      - name: "LDL"
+      - name: ldl
         description: "Low Dispatch Limit"
 
-      - name: "Base Point"
+      - name: base_point
         description: "SCED base point for the resource"
 
-      - name: "load_date"
+      - name: load_date
         description: "Date when the data was loaded"

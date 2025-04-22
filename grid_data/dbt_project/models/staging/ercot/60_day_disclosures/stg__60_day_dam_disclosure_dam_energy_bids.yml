@@ -5,89 +5,89 @@ models:
     description: "Staged 60-day DAM energy bids data from ERCOT"
     tests: []
     columns:
-      - name: Time
+      - name: time
         description: "Time of the bid"
-      
-      - name: "Interval Start"
+
+      - name: interval_start
         description: "Start time of the bidding interval"
-      
-      - name: "Interval End"
+
+      - name: interval_end
         description: "End time of the bidding interval"
-      
-      - name: "Settlement Point"
+
+      - name: settlement_point
         description: "Settlement point location"
-      
-      - name: "QSE Name"
+
+      - name: qse_name
         description: "Name of the Qualified Scheduling Entity"
-      
-      - name: "Energy Only Bid MW1"
+
+      - name: energy_only_bid_mw1
         description: "Energy bid quantity in MW for price point 1"
-      
-      - name: "Energy Only Bid Price1"
+
+      - name: energy_only_bid_price1
         description: "Energy bid price for price point 1"
-      
-      - name: "Energy Only Bid MW2"
+
+      - name: energy_only_bid_mw2
         description: "Energy bid quantity in MW for price point 2"
-      
-      - name: "Energy Only Bid Price2"
+
+      - name: energy_only_bid_price2
         description: "Energy bid price for price point 2"
-      
-      - name: "Energy Only Bid MW3"
+
+      - name: energy_only_bid_mw3
         description: "Energy bid quantity in MW for price point 3"
-      
-      - name: "Energy Only Bid Price3"
+
+      - name: energy_only_bid_price3
         description: "Energy bid price for price point 3"
-      
-      - name: "Energy Only Bid MW4"
+
+      - name: energy_only_bid_mw4
         description: "Energy bid quantity in MW for price point 4"
-      
-      - name: "Energy Only Bid Price4"
+
+      - name: energy_only_bid_price4
         description: "Energy bid price for price point 4"
-      
-      - name: "Energy Only Bid MW5"
+
+      - name: energy_only_bid_mw5
         description: "Energy bid quantity in MW for price point 5"
-      
-      - name: "Energy Only Bid Price5"
+
+      - name: energy_only_bid_price5
         description: "Energy bid price for price point 5"
-      
-      - name: "Energy Only Bid MW6"
+
+      - name: energy_only_bid_mw6
         description: "Energy bid quantity in MW for price point 6"
-      
-      - name: "Energy Only Bid Price6"
+
+      - name: energy_only_bid_price6
         description: "Energy bid price for price point 6"
-      
-      - name: "Energy Only Bid MW7"
+
+      - name: energy_only_bid_mw7
         description: "Energy bid quantity in MW for price point 7"
-      
-      - name: "Energy Only Bid Price7"
+
+      - name: energy_only_bid_price7
         description: "Energy bid price for price point 7"
-      
-      - name: "Energy Only Bid MW8"
+
+      - name: energy_only_bid_mw8
         description: "Energy bid quantity in MW for price point 8"
-      
-      - name: "Energy Only Bid Price8"
+
+      - name: energy_only_bid_price8
         description: "Energy bid price for price point 8"
-      
-      - name: "Energy Only Bid MW9"
+
+      - name: energy_only_bid_mw9
         description: "Energy bid quantity in MW for price point 9"
-      
-      - name: "Energy Only Bid Price9"
+
+      - name: energy_only_bid_price9
         description: "Energy bid price for price point 9"
-      
-      - name: "Energy Only Bid MW10"
+
+      - name: energy_only_bid_mw10
         description: "Energy bid quantity in MW for price point 10"
-      
-      - name: "Energy Only Bid Price10"
+
+      - name: energy_only_bid_price10
         description: "Energy bid price for price point 10"
-      
-      - name: "Energy Only Bid ID"
+
+      - name: energy_only_bid_id
         description: "Unique identifier for the energy bid"
-      
-      - name: "Multi-Hour Block Indicator"
+
+      - name: multi_hour_block_indicator
         description: "Indicator for multi-hour block bids"
-      
-      - name: "Block/Curve indicator"
+
+      - name: block_curve_indicator
         description: "Indicator for block or curve type bids"
-      
+
       - name: load_date
         description: "Date when the data was loaded"

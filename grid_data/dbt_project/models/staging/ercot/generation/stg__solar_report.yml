@@ -1,0 +1,108 @@
+version: 2
+
+models:
+  - name: stg__solar_report
+    description: "Staged solar generation report data from ERCOT"
+    tests: []
+    columns:
+      - name: publish_time
+        description: "Timestamp when the data was published by ERCOT"
+
+      - name: time
+        description: "Timestamp of the solar generation data"
+
+      - name: interval_start
+        description: "Start time of the interval for solar generation data"
+
+      - name: interval_end
+        description: "End time of the interval for solar generation data"
+
+      - name: gen_system_wide
+        description: "Actual solar generation across the entire ERCOT system (in MW)"
+
+      - name: cop_hsl_system_wide
+        description: "Current Operating Plan High Sustained Limit for solar resources system-wide (in MW)"
+
+      - name: stppf_system_wide
+        description: "Short-Term Photovoltaic Power Forecast for the entire ERCOT system (in MW)"
+
+      - name: pvgrpp_system_wide
+        description: "Photovoltaic Generation Resource Performance Prediction for the entire ERCOT system (in MW)"
+
+      - name: gen_centerwest
+        description: "Actual solar generation in the Center West region (in MW)"
+
+      - name: cop_hsl_centerwest
+        description: "Current Operating Plan High Sustained Limit for solar resources in Center West region (in MW)"
+
+      - name: stppf_centerwest
+        description: "Short-Term Photovoltaic Power Forecast for the Center West region (in MW)"
+
+      - name: pvgrpp_centerwest
+        description: "Photovoltaic Generation Resource Performance Prediction for the Center West region (in MW)"
+
+      - name: gen_northwest
+        description: "Actual solar generation in the North West region (in MW)"
+
+      - name: cop_hsl_northwest
+        description: "Current Operating Plan High Sustained Limit for solar resources in North West region (in MW)"
+
+      - name: stppf_northwest
+        description: "Short-Term Photovoltaic Power Forecast for the North West region (in MW)"
+
+      - name: pvgrpp_northwest
+        description: "Photovoltaic Generation Resource Performance Prediction for the North West region (in MW)"
+
+      - name: gen_farwest
+        description: "Actual solar generation in the Far West region (in MW)"
+
+      - name: cop_hsl_farwest
+        description: "Current Operating Plan High Sustained Limit for solar resources in Far West region (in MW)"
+
+      - name: stppf_farwest
+        description: "Short-Term Photovoltaic Power Forecast for the Far West region (in MW)"
+
+      - name: pvgrpp_farwest
+        description: "Photovoltaic Generation Resource Performance Prediction for the Far West region (in MW)"
+
+      - name: gen_fareast
+        description: "Actual solar generation in the Far East region (in MW)"
+
+      - name: cop_hsl_fareast
+        description: "Current Operating Plan High Sustained Limit for solar resources in Far East region (in MW)"
+
+      - name: stppf_fareast
+        description: "Short-Term Photovoltaic Power Forecast for the Far East region (in MW)"
+
+      - name: pvgrpp_fareast
+        description: "Photovoltaic Generation Resource Performance Prediction for the Far East region (in MW)"
+
+      - name: gen_southeast
+        description: "Actual solar generation in the South East region (in MW)"
+
+      - name: cop_hsl_southeast
+        description: "Current Operating Plan High Sustained Limit for solar resources in South East region (in MW)"
+
+      - name: stppf_southeast
+        description: "Short-Term Photovoltaic Power Forecast for the South East region (in MW)"
+
+      - name: pvgrpp_southeast
+        description: "Photovoltaic Generation Resource Performance Prediction for the South East region (in MW)"
+
+      - name: gen_centereast
+        description: "Actual solar generation in the Center East region (in MW)"
+
+      - name: cop_hsl_centereast
+        description: "Current Operating Plan High Sustained Limit for solar resources in Center East region (in MW)"
+
+      - name: stppf_centereast
+        description: "Short-Term Photovoltaic Power Forecast for the Center East region (in MW)"
+
+      - name: pvgrpp_centereast
+        description: "Photovoltaic Generation Resource Performance Prediction for the Center East region (in MW)"
+
+      - name: hsl_system_wide
+        description: "High Sustained Limit for solar resources across the entire ERCOT system (in MW)"
+
+      - name: load_date
+        description: "Date when the data was loaded"

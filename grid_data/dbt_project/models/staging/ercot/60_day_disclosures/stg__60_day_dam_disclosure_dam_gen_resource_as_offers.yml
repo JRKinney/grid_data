@@ -1,0 +1,195 @@
+version: 2
+
+models:
+  - name: stg__60_day_dam_disclosure_dam_gen_resource_as_offers
+    description: "Staged 60-day DAM generation resource ancillary service offers data from ERCOT"
+    tests: []
+    columns:
+      - name: time
+        description: "Time of the record"
+
+      - name: interval_start
+        description: "Start time of the interval"
+
+      - name: interval_end
+        description: "End time of the interval"
+
+      - name: qse
+        description: "Qualified Scheduling Entity"
+
+      - name: dme
+        description: "Designated Market Entity"
+
+      - name: generation_resource_name
+        description: "Name of the generation resource"
+
+      - name: multi_hour_block_flag
+        description: "Flag indicating if the offer spans multiple hours"
+
+      - name: block_indicator1
+        description: "Block indicator for price point 1"
+
+      - name: price1_rrspfr
+        description: "Price 1 for Responsive Reserve Service - Primary Frequency Response"
+
+      - name: price1_rrsffr
+        description: "Price 1 for Responsive Reserve Service - Fast Frequency Response"
+
+      - name: price1_rrsufr
+        description: "Price 1 for Responsive Reserve Service - Under Frequency Response"
+
+      - name: price1_ecrs
+        description: "Price 1 for ERCOT Contingency Reserve Service"
+
+      - name: price1_offec
+        description: "Price 1 for Offline ERCOT Contingency Reserve"
+
+      - name: price1_online_nonspin
+        description: "Price 1 for Online Non-Spinning Reserve"
+
+      - name: price1_regup
+        description: "Price 1 for Regulation Up Service"
+
+      - name: price1_regdown
+        description: "Price 1 for Regulation Down Service"
+
+      - name: price1_offline_nonspin
+        description: "Price 1 for Offline Non-Spinning Reserve"
+
+      - name: quantity_mw1
+        description: "Quantity in MW for price point 1"
+
+      - name: block_indicator2
+        description: "Block indicator for price point 2"
+
+      - name: price2_rrspfr
+        description: "Price 2 for Responsive Reserve Service - Primary Frequency Response"
+
+      - name: price2_rrsffr
+        description: "Price 2 for Responsive Reserve Service - Fast Frequency Response"
+
+      - name: price2_rrsufr
+        description: "Price 2 for Responsive Reserve Service - Under Frequency Response"
+
+      - name: price2_ecrs
+        description: "Price 2 for ERCOT Contingency Reserve Service"
+
+      - name: price2_offec
+        description: "Price 2 for Offline ERCOT Contingency Reserve"
+
+      - name: price2_online_nonspin
+        description: "Price 2 for Online Non-Spinning Reserve"
+
+      - name: price2_regup
+        description: "Price 2 for Regulation Up Service"
+
+      - name: price2_regdown
+        description: "Price 2 for Regulation Down Service"
+
+      - name: price2_offline_nonspin
+        description: "Price 2 for Offline Non-Spinning Reserve"
+
+      - name: quantity_mw2
+        description: "Quantity in MW for price point 2"
+
+      - name: block_indicator3
+        description: "Block indicator for price point 3"
+
+      - name: price3_rrspfr
+        description: "Price 3 for Responsive Reserve Service - Primary Frequency Response"
+
+      - name: price3_rrsffr
+        description: "Price 3 for Responsive Reserve Service - Fast Frequency Response"
+
+      - name: price3_rrsufr
+        description: "Price 3 for Responsive Reserve Service - Under Frequency Response"
+
+      - name: price3_ecrs
+        description: "Price 3 for ERCOT Contingency Reserve Service"
+
+      - name: price3_offec
+        description: "Price 3 for Offline ERCOT Contingency Reserve"
+
+      - name: price3_online_nonspin
+        description: "Price 3 for Online Non-Spinning Reserve"
+
+      - name: price3_regup
+        description: "Price 3 for Regulation Up Service"
+
+      - name: price3_regdown
+        description: "Price 3 for Regulation Down Service"
+
+      - name: price3_offline_nonspin
+        description: "Price 3 for Offline Non-Spinning Reserve"
+
+      - name: quantity_mw3
+        description: "Quantity in MW for price point 3"
+
+      - name: block_indicator4
+        description: "Block indicator for price point 4"
+
+      - name: price4_rrspfr
+        description: "Price 4 for Responsive Reserve Service - Primary Frequency Response"
+
+      - name: price4_rrsffr
+        description: "Price 4 for Responsive Reserve Service - Fast Frequency Response"
+
+      - name: price4_rrsufr
+        description: "Price 4 for Responsive Reserve Service - Under Frequency Response"
+
+      - name: price4_ecrs
+        description: "Price 4 for ERCOT Contingency Reserve Service"
+
+      - name: price4_offec
+        description: "Price 4 for Offline ERCOT Contingency Reserve"
+
+      - name: price4_online_nonspin
+        description: "Price 4 for Online Non-Spinning Reserve"
+
+      - name: price4_regup
+        description: "Price 4 for Regulation Up Service"
+
+      - name: price4_regdown
+        description: "Price 4 for Regulation Down Service"
+
+      - name: price4_offline_nonspin
+        description: "Price 4 for Offline Non-Spinning Reserve"
+
+      - name: quantity_mw4
+        description: "Quantity in MW for price point 4"
+
+      - name: block_indicator5
+        description: "Block indicator for price point 5"
+
+      - name: price5_rrspfr
+        description: "Price 5 for Responsive Reserve Service - Primary Frequency Response"
+
+      - name: price5_rrsffr
+        description: "Price 5 for Responsive Reserve Service - Fast Frequency Response"
+
+      - name: price5_rrsufr
+        description: "Price 5 for Responsive Reserve Service - Under Frequency Response"
+
+      - name: price5_ecrs
+        description: "Price 5 for ERCOT Contingency Reserve Service"
+
+      - name: price5_offec
+        description: "Price 5 for Offline ERCOT Contingency Reserve"
+
+      - name: price5_online_nonspin
+        description: "Price 5 for Online Non-Spinning Reserve"
+
+      - name: price5_regup
+        description: "Price 5 for Regulation Up Service"
+
+      - name: price5_regdown
+        description: "Price 5 for Regulation Down Service"
+
+      - name: price5_offline_nonspin
+        description: "Price 5 for Offline Non-Spinning Reserve"
+
+      - name: quantity_mw5
+        description: "Quantity in MW for price point 5"
+
+      - name: load_date
+        description: "Date when the data was loaded"

@@ -5,23 +5,23 @@ models:
     description: "Staged 60-day SCED Shadow Marginal Node Electricity prices from ERCOT"
     tests: []
     columns:
-      - name: "Interval Start"
+      - name: interval_start
         description: "Start time of the interval"
 
-      - name: "Interval End"
+      - name: interval_end
         description: "End time of the interval"
 
-      - name: "Interval Time"
+      - name: interval_time
         description: "Time of the interval"
 
-      - name: "Interval Number"
+      - name: interval_number
         description: "Sequential number of the interval"
 
-      - name: "Resource Code"
+      - name: resource_code
         description: "Identification code for the resource"
 
-      - name: "Interval Value"
+      - name: interval_value
         description: "Shadow price value for the interval"
 
-      - name: "load_date"
+      - name: load_date
         description: "Date when the data was loaded"

@@ -1,0 +1,66 @@
+version: 2
+
+models:
+  - name: stg__resource_outage_capacity
+    description: "Staged resource outage capacity data from ERCOT"
+    tests: []
+    columns:
+      - name: publish_time
+        description: "Timestamp when the data was published by ERCOT"
+
+      - name: time
+        description: "Timestamp of the resource outage capacity data"
+
+      - name: interval_start
+        description: "Start time of the interval for resource outage capacity"
+
+      - name: interval_end
+        description: "End time of the interval for resource outage capacity"
+
+      - name: total_resource_mw_zone_south
+        description: "Total resource capacity in MW for the South zone"
+
+      - name: total_resource_mw_zone_north
+        description: "Total resource capacity in MW for the North zone"
+
+      - name: total_resource_mw_zone_west
+        description: "Total resource capacity in MW for the West zone"
+
+      - name: total_resource_mw_zone_houston
+        description: "Total resource capacity in MW for the Houston zone"
+
+      - name: total_resource_mw
+        description: "Total resource capacity in MW across all zones"
+
+      - name: total_irr_mw_zone_south
+        description: "Total Intermittent Renewable Resource capacity in MW for the South zone"
+
+      - name: total_irr_mw_zone_north
+        description: "Total Intermittent Renewable Resource capacity in MW for the North zone"
+
+      - name: total_irr_mw_zone_west
+        description: "Total Intermittent Renewable Resource capacity in MW for the West zone"
+
+      - name: total_irr_mw_zone_houston
+        description: "Total Intermittent Renewable Resource capacity in MW for the Houston zone"
+
+      - name: total_irr_mw
+        description: "Total Intermittent Renewable Resource capacity in MW across all zones"
+
+      - name: total_new_equip_resource_mw_zone_south
+        description: "Total new equipment resource capacity in MW for the South zone"
+
+      - name: total_new_equip_resource_mw_zone_north
+        description: "Total new equipment resource capacity in MW for the North zone"
+
+      - name: total_new_equip_resource_mw_zone_west
+        description: "Total new equipment resource capacity in MW for the West zone"
+
+      - name: total_new_equip_resource_mw_zone_houston
+        description: "Total new equipment resource capacity in MW for the Houston zone"
+
+      - name: total_new_equip_resource_mw
+        description: "Total new equipment resource capacity in MW across all zones"
+
+      - name: load_date
+        description: "Date when the data was loaded"

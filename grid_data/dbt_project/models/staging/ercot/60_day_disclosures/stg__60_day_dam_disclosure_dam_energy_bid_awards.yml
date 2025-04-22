@@ -5,29 +5,29 @@ models:
     description: "Staged 60-day DAM energy bid awards data from ERCOT"
     tests: []
     columns:
-      - name: "Time"
+      - name: time
         description: "Time of the bid award"
-      
-      - name: "Interval Start"
+
+      - name: interval_start
         description: "Start time of the bidding interval"
-      
-      - name: "Interval End"
+
+      - name: interval_end
         description: "End time of the bidding interval"
-      
-      - name: "Settlement Point"
+
+      - name: settlement_point
         description: "Settlement point location"
-      
-      - name: "QSE Name"
+
+      - name: qse_name
         description: "Name of the Qualified Scheduling Entity"
-      
-      - name: "Energy Only Bid Award in MW"
+
+      - name: energy_only_bid_award_in_mw
         description: "Awarded energy bid amount in megawatts"
-      
-      - name: "Settlement Point Price"
+
+      - name: settlement_point_price
         description: "Price at the settlement point"
-      
-      - name: "Bid ID"
+
+      - name: bid_id
         description: "Unique identifier for the bid"
-      
-      - name: "load_date"
+
+      - name: load_date
         description: "Date when the data was loaded"

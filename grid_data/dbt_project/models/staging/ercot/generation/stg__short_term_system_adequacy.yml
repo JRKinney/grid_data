@@ -1,0 +1,69 @@
+version: 2
+
+models:
+  - name: stg__short_term_system_adequacy
+    description: "Staged short-term system adequacy data from ERCOT"
+    tests: []
+    columns:
+      - name: interval_start
+        description: "Start time of the interval for system adequacy data"
+
+      - name: interval_end
+        description: "End time of the interval for system adequacy data"
+
+      - name: publish_time
+        description: "Timestamp when the data was published by ERCOT"
+
+      - name: capacity_generation_resource_south
+        description: "Available generation capacity in MW for the South zone"
+
+      - name: capacity_generation_resource_north
+        description: "Available generation capacity in MW for the North zone"
+
+      - name: capacity_generation_resource_west
+        description: "Available generation capacity in MW for the West zone"
+
+      - name: capacity_generation_resource_houston
+        description: "Available generation capacity in MW for the Houston zone"
+
+      - name: capacity_load_resource_south
+        description: "Available load resource capacity in MW for the South zone"
+
+      - name: capacity_load_resource_north
+        description: "Available load resource capacity in MW for the North zone"
+
+      - name: capacity_load_resource_west
+        description: "Available load resource capacity in MW for the West zone"
+
+      - name: capacity_load_resource_houston
+        description: "Available load resource capacity in MW for the Houston zone"
+
+      - name: offline_available_mw_south
+        description: "Offline but available generation capacity in MW for the South zone"
+
+      - name: offline_available_mw_north
+        description: "Offline but available generation capacity in MW for the North zone"
+
+      - name: offline_available_mw_west
+        description: "Offline but available generation capacity in MW for the West zone"
+
+      - name: offline_available_mw_houston
+        description: "Offline but available generation capacity in MW for the Houston zone"
+
+      - name: available_capacity_generation
+        description: "Total available generation capacity in MW"
+
+      - name: available_capacity_reserve
+        description: "Total available reserve capacity in MW"
+
+      - name: capacity_generation_resource_total
+        description: "Total capacity of all generation resources in MW across all zones"
+
+      - name: capacity_load_resource_total
+        description: "Total capacity of all load resources in MW across all zones"
+
+      - name: offline_available_mw_total
+        description: "Total offline but available capacity in MW across all zones"
+
+      - name: load_date
+        description: "Date when the data was loaded"
