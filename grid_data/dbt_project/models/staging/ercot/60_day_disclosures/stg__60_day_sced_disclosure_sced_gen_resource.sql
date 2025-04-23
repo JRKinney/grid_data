@@ -163,7 +163,7 @@ SELECT
     "LDL" AS ldl, -- noqa
     "Telemetered Resource Status" AS telemetered_resource_status,
     "Base Point" AS base_point,
-    "Telemetered Net Output" AS telemetered_net_output,
+    "Telemetered Net Output " AS telemetered_net_output,
     "Ancillary Service REGUP" AS ancillary_service_regup,
     "Ancillary Service REGDN" AS ancillary_service_regdn,
     "Ancillary Service RRS" AS ancillary_service_rrs,
