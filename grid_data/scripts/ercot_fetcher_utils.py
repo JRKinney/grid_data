@@ -148,6 +148,7 @@ class ErcotFetcher:
                 logger.error(f"Error fetching wind report: {e}")
                 time.sleep(1)
 
+        df["load_date"] = pd.Timestamp.now()
         df.to_parquet(
             self.data_dir
             / "raw"
@@ -172,6 +173,7 @@ class ErcotFetcher:
                 logger.error(f"Error fetching solar report: {e}")
                 time.sleep(1)
 
+        df["load_date"] = pd.Timestamp.now()
         df.to_parquet(
             self.data_dir
             / "raw"
@@ -196,6 +198,7 @@ class ErcotFetcher:
                 logger.error(f"Error fetching ancillary service prices: {e}")
                 time.sleep(1)
 
+        df["load_date"] = pd.Timestamp.now()
         df.to_parquet(
             self.data_dir
             / "raw"
@@ -220,6 +223,7 @@ class ErcotFetcher:
                 logger.error(f"Error fetching ancillary service plan: {e}")
                 time.sleep(1)
 
+        df["load_date"] = pd.Timestamp.now()
         df.to_parquet(
             self.data_dir
             / "raw"
@@ -247,6 +251,7 @@ class ErcotFetcher:
                 logger.error(f"Error fetching real-time spp for load zones: {e}")
                 time.sleep(1)
 
+        df["load_date"] = pd.Timestamp.now()
         df.to_parquet(
             self.data_dir
             / "raw"
@@ -274,6 +279,7 @@ class ErcotFetcher:
                 logger.error(f"Error fetching day-ahead spp for load zones: {e}")
                 time.sleep(1)
 
+        df["load_date"] = pd.Timestamp.now()
         df.to_parquet(
             self.data_dir
             / "raw"
@@ -322,6 +328,7 @@ class ErcotFetcher:
                 logger.error(f"Error fetching resource outage capacity: {e}")
                 time.sleep(1)
 
+        df["load_date"] = pd.Timestamp.now()
         df.to_parquet(
             self.data_dir
             / "raw"
@@ -346,6 +353,7 @@ class ErcotFetcher:
                 logger.error(f"Error fetching reported outages: {e}")
                 time.sleep(1)
 
+        df["load_date"] = pd.Timestamp.now()
         df.to_parquet(
             self.data_dir
             / "raw"
@@ -370,6 +378,7 @@ class ErcotFetcher:
                 logger.error(f"Error fetching temperature forecast: {e}")
                 time.sleep(1)
 
+        df["load_date"] = pd.Timestamp.now()
         df.to_parquet(
             self.data_dir
             / "raw"
@@ -394,6 +403,7 @@ class ErcotFetcher:
                 logger.error(f"Error fetching system wide actual load: {e}")
                 time.sleep(1)
 
+        df["load_date"] = pd.Timestamp.now()
         df.to_parquet(
             self.data_dir
             / "raw"
@@ -418,6 +428,7 @@ class ErcotFetcher:
                 logger.error(f"Error fetching unplanned resource outages: {e}")
                 time.sleep(1)
 
+        df["load_date"] = pd.Timestamp.now()
         df.to_parquet(
             self.data_dir
             / "raw"
@@ -442,6 +453,7 @@ class ErcotFetcher:
                 logger.error(f"Error fetching short term system adequacy: {e}")
                 time.sleep(1)
 
+        df["load_date"] = pd.Timestamp.now()
         df.to_parquet(
             self.data_dir
             / "raw"

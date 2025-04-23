@@ -1,0 +1,36 @@
+version: 2
+
+models:
+  - name: stg__zonal_load_forecast
+    description: "Staged zonal load forecast data from ERCOT"
+    tests: []
+    columns:
+      - name: time
+        description: "Timestamp of the load forecast"
+
+      - name: interval_start
+        description: "Start time of the interval for the load forecast"
+
+      - name: interval_end
+        description: "End time of the interval for the load forecast"
+
+      - name: publish_time
+        description: "Time when the forecast was published by ERCOT"
+
+      - name: north
+        description: "Forecasted load for the North zone in MW"
+
+      - name: south
+        description: "Forecasted load for the South zone in MW"
+
+      - name: west
+        description: "Forecasted load for the West zone in MW"
+
+      - name: houston
+        description: "Forecasted load for the Houston zone in MW"
+
+      - name: system_total
+        description: "Total forecasted load across all zones in MW"
+
+      - name: load_date
+        description: "Date when the data was loaded"

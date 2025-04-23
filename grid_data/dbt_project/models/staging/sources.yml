@@ -49,3 +49,88 @@ sources:
           external_location: "../data/raw/ercot/60_day_disclosures/60_day_sced_disclosure_sced_smne__*.parquet"
           file_format: parquet
           auto_refresh: true
+
+  - name: ercot_raw_generation
+    schema: main
+    tables:
+      - name: reported_outages
+        meta:
+          external_location: "../data/raw/ercot/generation/reported_outages__*.parquet"
+          file_format: parquet
+          auto_refresh: true
+      - name: resource_outage_capacity
+        meta:
+          external_location: "../data/raw/ercot/generation/resource_outage_capacity__*.parquet"
+          file_format: parquet
+          auto_refresh: true
+      - name: short_term_system_adequacy
+        meta:
+          external_location: "../data/raw/ercot/generation/short_term_system_adequacy__*.parquet"
+          file_format: parquet
+          auto_refresh: true
+      - name: solar_report
+        meta:
+          external_location: "../data/raw/ercot/generation/solar_report__*.parquet"
+          file_format: parquet
+          auto_refresh: true
+      - name: wind_report
+        meta:
+          external_location: "../data/raw/ercot/generation/wind_report__*.parquet"
+          file_format: parquet
+          auto_refresh: true
+      - name: unplanned_resource_outages
+        meta:
+          external_location: "../data/raw/ercot/generation/unplanned_resource_outages__*.parquet"
+          file_format: parquet
+          auto_refresh: true
+
+  - name: ercot_raw_load
+    schema: main
+    tables:
+      - name: system_wide_actual_load
+        meta:
+          external_location: "../data/raw/ercot/load/system_wide_actual_load__*.parquet"
+          file_format: parquet
+          auto_refresh: true
+      - name: zonal_load_forecast
+        meta:
+          external_location: "../data/raw/ercot/load/zonal_load_forecast__*.parquet"
+          file_format: parquet
+          auto_refresh: true
+
+  - name: ercot_raw_market_plans
+    schema: main
+    tables:
+      - name: as_plan
+        meta:
+          external_location: "../data/raw/ercot/market_plans/as_plan__*.parquet"
+          file_format: parquet
+          auto_refresh: true
+
+  - name: ercot_raw_prices
+    schema: main
+    tables:
+      - name: as_prices
+        meta:
+          external_location: "../data/raw/ercot/prices/as_prices__*.parquet"
+          file_format: parquet
+          auto_refresh: true
+      - name: zonal_da_spp
+        meta:
+          external_location: "../data/raw/ercot/prices/zonal_da_spp__*.parquet"
+          file_format: parquet
+          auto_refresh: true
+      - name: zonal_rt_spp
+        meta:
+          external_location: "../data/raw/ercot/prices/zonal_rt_spp__*.parquet"
+          file_format: parquet
+          auto_refresh: true
+
+  - name: ercot_raw_weather
+    schema: main
+    tables:
+      - name: temperature_forecast
+        meta:
+          external_location: "../data/raw/ercot/weather/temperature_forecast__*.parquet"
+          file_format: parquet
+          auto_refresh: true

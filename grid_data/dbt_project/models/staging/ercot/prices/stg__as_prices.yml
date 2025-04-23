@@ -1,0 +1,36 @@
+version: 2
+
+models:
+  - name: stg__as_prices
+    description: "Staged ancillary services prices data from ERCOT"
+    tests: []
+    columns:
+      - name: time
+        description: "Timestamp of the ancillary services prices"
+
+      - name: interval_start
+        description: "Start time of the interval for the ancillary services prices"
+
+      - name: interval_end
+        description: "End time of the interval for the ancillary services prices"
+
+      - name: market
+        description: "Market type (DAM or RTM)"
+
+      - name: non_spinning_reserves
+        description: "Market clearing price for Non-Spinning Reserves ($/MW)"
+
+      - name: regulation_down
+        description: "Market clearing price for Regulation Down service ($/MW)"
+
+      - name: regulation_up
+        description: "Market clearing price for Regulation Up service ($/MW)"
+
+      - name: responsive_reserves
+        description: "Market clearing price for Responsive Reserves ($/MW)"
+
+      - name: ercot_contingency_reserve_service
+        description: "Market clearing price for ERCOT Contingency Reserve Service ($/MW)"
+
+      - name: load_date
+        description: "Date when the data was loaded"

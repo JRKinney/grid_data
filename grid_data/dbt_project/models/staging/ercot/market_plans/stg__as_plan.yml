@@ -1,0 +1,33 @@
+version: 2
+
+models:
+  - name: stg__as_plan
+    description: "Staged ancillary services plan data from ERCOT"
+    tests: []
+    columns:
+      - name: interval_start
+        description: "Start time of the interval for the ancillary services plan"
+
+      - name: interval_end
+        description: "End time of the interval for the ancillary services plan"
+
+      - name: publish_time
+        description: "Time when the ancillary services plan was published by ERCOT"
+
+      - name: nspin
+        description: "Non-Spinning Reserve requirement in MW"
+
+      - name: regdn
+        description: "Regulation Down requirement in MW"
+
+      - name: regup
+        description: "Regulation Up requirement in MW"
+
+      - name: rrs
+        description: "Responsive Reserve Service requirement in MW"
+
+      - name: ecrs
+        description: "ERCOT Contingency Reserve Service requirement in MW"
+
+      - name: load_date
+        description: "Date when the data was loaded"

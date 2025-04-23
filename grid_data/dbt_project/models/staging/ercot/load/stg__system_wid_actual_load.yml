@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: stg__system_wide_actual_load
+    description: "Staged system-wide actual load data from ERCOT"
+    tests: []
+    columns:
+      - name: time
+        description: "Timestamp of the load measurement"
+
+      - name: interval_start
+        description: "Start time of the interval for load measurement"
+
+      - name: interval_end
+        description: "End time of the interval for load measurement"
+
+      - name: demand
+        description: "Actual system-wide demand in MW"
+
+      - name: load_date
+        description: "Date when the data was loaded"

@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: stg__zonal_da_spp
+    description: "Staged Day-Ahead zonal Settlement Point Prices from ERCOT"
+    tests: []
+    columns:
+      - name: time
+        description: "Timestamp of the settlement point price"
+
+      - name: interval_start
+        description: "Start time of the interval for the settlement point price"
+
+      - name: interval_end
+        description: "End time of the interval for the settlement point price"
+
+      - name: location
+        description: "Settlement point location name"
+
+      - name: location_type
+        description: "Type of location (Zone, Hub, etc.)"
+
+      - name: market
+        description: "Market type (DAM)"
+
+      - name: spp
+        description: "Settlement Point Price ($/MWh)"
+
+      - name: load_date
+        description: "Date when the data was loaded"
