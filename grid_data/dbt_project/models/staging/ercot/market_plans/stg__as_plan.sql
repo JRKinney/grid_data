@@ -7,10 +7,10 @@ SELECT
     "Interval Start" AS interval_start,
     "Interval End" AS interval_end,
     "Publish Time" AS publish_time,
-    "NSPIN" AS nspin,
-    "REGDN" AS regdn,
-    "REGUP" AS regup,
-    "RRS" AS rrs,
-    "ECRS" AS ecrs,
+    "NSPIN" AS nspin, -- noqa
+    "REGDN" AS regdn, -- noqa
+    "REGUP" AS regup, -- noqa
+    "RRS" AS rrs, -- noqa
+    "ECRS" AS ecrs, -- noqa
     load_date
 FROM source_data

@@ -4,12 +4,12 @@ WITH source_data AS (
 )
 
 SELECT
-    "Time" AS time,
+    "Time" AS time, -- noqa
     "Interval Start" AS interval_start,
     "Interval End" AS interval_end,
-    "Location" AS location,
+    "Location" AS location, -- noqa
     "Location Type" AS location_type,
-    "Market" AS market,
-    "SPP" AS spp,
+    "Market" AS market, -- noqa
+    "SPP" AS spp, -- noqa
     load_date
 FROM source_data
